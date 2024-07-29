@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #22C3BD;
+  --secondary-color: #A8DADC;
+  --neutral-light: #F1FAEE;
+  --neutral-dark: #2E2E2E;
+  --white: #FFFFFF;
+  --black: #000000;
+  --accent-color: #F4A261;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.glassmorphism {
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+}
+
+.card-shadow {
+  box-shadow: 0 10px 15px rgba(11, 61, 60, 0.199), 0 4px 6px rgba(13, 121, 117, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 5px 10px rgba(11, 61, 60, 0.199), 0 8px 10px rgba(13, 121, 117, 0.3);
+}
+
+@keyframes borderSweep {
+  0% {
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+  }
+  25% {
+    border-top: 2px solid var(--primary-color);
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+  }
+  50% {
+    border-top: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+  }
+  75% {
+    border-top: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    border-left: 2px solid transparent;
+  }
+  100% {
+    border-top: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    border-left: 2px solid var(--primary-color);
+  }
+}
+
+.border-animation {
+  animation: borderSweep 1s ease-in-out;
+}
+
+/* Add To Custom ReviewSlider Styles */
+.slick-slide {
+  padding: 0 10px;
+}
+
+.slick-arrow {
+  z-index: 1;
+}
+
+/* Additional styling for the card */
+.MuiCard-root {
+  margin: 20px 0; /* Adjust margin to avoid clipping */
+}
+
+.MuiRating-root {
+  margin-top: 10px;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}

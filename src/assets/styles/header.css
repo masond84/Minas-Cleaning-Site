@@ -1,0 +1,15 @@
+.nav-link::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 20px;
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-link:first-child::before {
+    display: none;
+}
