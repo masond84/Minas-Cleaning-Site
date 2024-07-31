@@ -11,28 +11,28 @@ const reviews = [
         name: "Kelsey Clark",
         date: "March 2022",
         rating: 5,
-        text: "I had Luxe suggested to me 3 years ago and I've been a happy customer ever since. The individuals/teams are pleasant, thorough and always very courteous. I have recommended this business to many of my friends, and everyone has been happy with their services!!!",
+        text: "Minas Cleaning Service has been a lifesaver! They are always on time, thorough, and leave my home spotless. I've been using their service for years and highly recommend them to everyone!",
         image: "http://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/340px-Default_pfp.svg.png"
     },
     {
         name: "Michael Clark",
         date: "March 2022",
         rating: 1,
-        text: "I had Luxe suggested to me 3 years ago and I've been a happy customer ever since. The individuals/teams are pleasant, thorough and always very courteous. I have recommended this business to many of my friends, and everyone has been happy with their services!!!",
+        text: "I switched to Minas Cleaning Service last year, and I've never been happier. Their staff is friendly, professional, and efficient. They always exceed my expectations and keep my home sparkling clean.",
         image: "http://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/340px-Default_pfp.svg.png"
     },
     {
         name: "Sammy Jones",
         date: "March 2022",
         rating: 4,
-        text: "I had Luxe suggested to me 3 years ago and I've been a happy customer ever since. The individuals/teams are pleasant, thorough and always very courteous. I have recommended this business to many of my friends, and everyone has been happy with their services!!!",
+        text: "Choosing Minas Cleaning Service was the best decision I made for my home. The team is polite, hardworking, and meticulous. I've recommended them to my friends, and they love the service as much as I do.",
         image: "http://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/340px-Default_pfp.svg.png"
     },
     {
         name: "Joseph Greenfeild",
         date: "March 2022",
         rating: 3,
-        text: "I had Luxe suggested to me 3 years ago and I've been a happy customer ever since. The individuals/teams are pleasant, thorough and always very courteous. I have recommended this business to many of my friends, and everyone has been happy with their services!!!",
+        text: "Minas Cleaning Service consistently delivers top-notch cleaning. The team is courteous, detail-oriented, and reliable. My home looks amazing every time, and I can't recommend them enough to my friends and family!",
         image: "http://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/340px-Default_pfp.svg.png"
     },
 ]

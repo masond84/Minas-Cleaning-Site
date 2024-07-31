@@ -58,7 +58,7 @@ const Home = () => {
         {/* INTRODUCTION SECTION */}
         <section className='py-12 px-4 md:px-8 lg:px-16 bg-white text-center'>
             <p className='font-montserrat text-lg md:text-xl mb-6 mx-auto max-w-4xl'>
-                At Luxe Cleaning Co. we pride ourselves in providing you with a high-quality clean & professional service. Servicing all of SE MB, we offer Home, Business, or Post-Construction Cleaning to give you a hand with your cleaning needs. Our friendly crew is ready to impress.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur ultricies augue nec urna blandit, nec luctus orci scelerisque. Praesent volutpat mauris sit amet sapien ultrices, et varius sem cursus. Fusce quis eros non justo fringilla lacinia ut ac ipsum. Nam id sem at odio efficitur finibus.
             </p>
         </section>
 
@@ -67,7 +67,7 @@ const Home = () => {
 
         {/* FEATURES SECTION */}
         <section className='py-12 px-4 md:px-8 lg:px-16 bg-white'>
-            <h2 className='text-2xl md:text-3xl font-montserrat font-light text-center mb-8'>Why Choose Luxe</h2>
+            <h2 className='text-2xl md:text-3xl font-montserrat font-light text-center mb-8'>Why Choose Minas'</h2>
             <div className='flex flex-col md:flex-row justify-center items-start space-y-8 md:space-y-0 md:space-x-16'>
                 <motion.div
                     initial="hidden"

@@ -26,7 +26,7 @@ const Carousel = () => {
                         <div className='glassmorphism bg-white bg-opacity-80 text-center p-6 md:p-10 rounded max-w-md'>
                             <h2 className='text-sm md:text-lg font-medium'>RESIDENTIAL</h2>
                             <h1 className='text-xl md:text-3xl font-bold mt-2'>First Impressions Count</h1>
-                            <p className='text-sm md:text-base mt-4'>Let us take over your residential cleaning services and we will deliver the very best clean every time!</p>
+                            <p className='text-sm md:text-base mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed varius eros, eu placerat.</p>
                             <button
                                 style={{
                                     backgroundColor: 'var(--primary-color)',
@@ -46,9 +46,9 @@ const Carousel = () => {
                     <img className="w-full h-full object-cover object-center" src={CleaningImage2} alt='Slide 2'></img>
                     <div className='absolute inset-0 flex items-center justify-center'>
                         <div className='glassmorphism bg-white bg-opacity-80 text-center p-6 md:p-10 rounded max-w-md'>
-                            <h2 className='text-sm md:text-lg font-medium'>RESIDENTIAL</h2>
+                            <h2 className='text-sm md:text-lg font-medium'>COMMERCIAL</h2>
                             <h1 className='text-xl md:text-3xl font-bold mt-2'>First Impressions Count</h1>
-                            <p className='text-sm md:text-base mt-4'>Let us take over your residential cleaning services and we will deliver the very best clean every time!</p>
+                            <p className='text-sm md:text-base mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed varius eros, eu placerat.</p>
                             <button
                                 style={{
                                     backgroundColor: 'var(--primary-color)',
@@ -70,7 +70,7 @@ const Carousel = () => {
                         <div className='glassmorphism bg-white bg-opacity-80 text-center p-6 md:p-10 rounded max-w-md'>
                             <h2 className='text-sm md:text-lg font-medium'>RESIDENTIAL</h2>
                             <h1 className='text-xl md:text-3xl font-bold mt-2'>First Impressions Count</h1>
-                            <p className='text-sm md:text-base mt-4'>Let us take over your residential cleaning services and we will deliver the very best clean every time!</p>
+                            <p className='text-sm md:text-base mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed varius eros, eu placerat.</p>
                             <button
                                 style={{
                                     backgroundColor: 'var(--primary-color)',
@@ -90,9 +90,9 @@ const Carousel = () => {
                     <img className="w-full h-full object-cover object-center" src={CleaningImage2} alt='Slide 4'></img>
                     <div className='absolute inset-0 flex items-center justify-center'>
                         <div className='glassmorphism bg-white bg-opacity-80 text-center p-6 md:p-10 rounded max-w-md'>
-                            <h2 className='text-sm md:text-lg font-medium'>RESIDENTIAL</h2>
+                            <h2 className='text-sm md:text-lg font-medium'>COMMERCIAL</h2>
                             <h1 className='text-xl md:text-3xl font-bold mt-2'>First Impressions Count</h1>
-                            <p className='text-sm md:text-base mt-4'>Let us take over your residential cleaning services and we will deliver the very best clean every time!</p>
+                            <p className='text-sm md:text-base mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed varius eros, eu placerat.</p>
                             <button
                                 style={{
                                     backgroundColor: 'var(--primary-color)',
