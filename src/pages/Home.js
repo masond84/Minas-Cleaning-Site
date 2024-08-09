@@ -33,12 +33,13 @@ const Home = () => {
                         className="text-2xl md:text-4xl font-montserrat font-semibold mb-4"
                         style={{ color: 'var(--white)'}}
                     >
-                        WE'LL HANDLE THE GRIME, YOU FOCUS ON LIFE</h1>
+                    CLEAN SPACE, HAPPY SPACE    
+                    </h1>
                     <p 
                         className='font-montserrat text-lg md:text-xl mb-6'
                         style={{ color: 'var(--white)'}}
                     >
-                        From dusting to disinfecting, we’ve got the details under control.
+                        We offer top-notch cleaning services that will leave your space sparkling clean and those in it smiling!
                     </p>
                     <button 
                         className=' text-white font-montserrat px-6 py-3 rounded transition duration-300 hover:bg-gray-800'
@@ -58,7 +59,7 @@ const Home = () => {
         {/* INTRODUCTION SECTION */}
         <section className='py-12 px-4 md:px-8 lg:px-16 bg-white text-center'>
             <p className='font-montserrat text-lg md:text-xl mb-6 mx-auto max-w-4xl'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur ultricies augue nec urna blandit, nec luctus orci scelerisque. Praesent volutpat mauris sit amet sapien ultrices, et varius sem cursus. Fusce quis eros non justo fringilla lacinia ut ac ipsum. Nam id sem at odio efficitur finibus.
+            Minas Cleaning Services is dedicated to making your space spotless and welcoming. Covering all your cleaning needs, from homes to businesses and post-construction, our skilled team ensures every job is done right. Count on us for thorough, reliable service with a personal touch.
             </p>
         </section>
 
@@ -79,37 +80,15 @@ const Home = () => {
                     <ul className='space-y-4 font-montserrat text-lg md:text-xl list-none'>
                         <motion.li variants={listItemVariants} className='flex items-center'>
                             <FaCheckCircle className='text-primary-color mr-2' />
-                            <span className="pl-3 border-l-2 border-primary-color">Trained & Certified Staff</span>
+                            <span className="pl-3 border-l-2 border-primary-color">Trained & Certified Bilingual Staff</span>
                         </motion.li>
                         <motion.li variants={listItemVariants} className='flex items-center'>
                             <FaCheckCircle className='text-primary-color mr-2' />
-                            <span className="pl-3 border-l-2 border-primary-color">Insured, Bonded & Licensed</span>
+                            <span className="pl-3 border-l-2 border-primary-color">Eco-Friendly And Pet Friendly Cleaning Products</span>
                         </motion.li>
                         <motion.li variants={listItemVariants} className='flex items-center'>
                             <FaCheckCircle className='text-primary-color mr-2' />
-                            <span className="pl-3 border-l-2 border-primary-color">100% Satisfaction Guarantee</span>
-                        </motion.li>
-                    </ul>
-                </motion.div>
-                <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.2 }}
-                    variants={{ visible: { transition: { staggerChildren: 0.2 } } }}
-                    className='flex flex-col items-start text-left'
-                >
-                    <ul className='space-y-4 font-montserrat text-lg md:text-xl list-none'>
-                        <motion.li variants={listItemVariants} className='flex items-center'>
-                            <FaCheckCircle className='text-primary-color mr-2' />
-                            <span className="pl-3 border-l-2 border-primary-color">High Quality Clean</span>
-                        </motion.li>
-                        <motion.li variants={listItemVariants} className='flex items-center'>
-                            <FaCheckCircle className='text-primary-color mr-2' />
-                            <span className="pl-3 border-l-2 border-primary-color">We Bring Our Own Cleaning Supplies</span>
-                        </motion.li>
-                        <motion.li variants={listItemVariants} className='flex items-center'>
-                            <FaCheckCircle className='text-primary-color mr-2' />
-                            <span className="pl-3 border-l-2 border-primary-color">Responsive to Feedback</span>
+                            <span className="pl-3 border-l-2 border-primary-color">Reliable And Family Friendly Services</span>
                         </motion.li>
                     </ul>
                 </motion.div>
@@ -123,7 +102,7 @@ const Home = () => {
                     <ul className='space-y-4 font-montserrat text-lg md:text-xl list-none'>
                         <motion.li variants={listItemVariants} className='flex items-center'>
                             <FaCheckCircle className='text-primary-color mr-2' />
-                            <span className="pl-3 border-l-2 border-primary-color">Easy Cash-Free Payment</span>
+                            <span className="pl-3 border-l-2 border-primary-color">Customer Focused Communication</span>
                         </motion.li>
                         <motion.li variants={listItemVariants} className='flex items-center'>
                             <FaCheckCircle className='text-primary-color mr-2' />
@@ -131,7 +110,29 @@ const Home = () => {
                         </motion.li>
                         <motion.li variants={listItemVariants} className='flex items-center'>
                             <FaCheckCircle className='text-primary-color mr-2' />
-                            <span className="pl-3 border-l-2 border-primary-color">No Travel Fees!</span>
+                            <span className="pl-3 border-l-2 border-primary-color">Tailored Cleaning, Transparent Pricing</span>
+                        </motion.li>
+                    </ul>
+                </motion.div>
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.2 }}
+                    variants={{ visible: { transition: { staggerChildren: 0.2 } } }}
+                    className='flex flex-col items-start text-left'
+                >
+                    <ul className='space-y-4 font-montserrat text-lg md:text-xl list-none'>
+                        <motion.li variants={listItemVariants} className='flex items-center'>
+                            <FaCheckCircle className='text-primary-color mr-2' />
+                            <span className="pl-3 border-l-2 border-primary-color">Locally Owned And Operated</span>
+                        </motion.li>
+                        <motion.li variants={listItemVariants} className='flex items-center'>
+                            <FaCheckCircle className='text-primary-color mr-2' />
+                            <span className="pl-3 border-l-2 border-primary-color">Serving Over 60 Clients In The Pittsburgh Area</span>
+                        </motion.li>
+                        <motion.li variants={listItemVariants} className='flex items-center'>
+                            <FaCheckCircle className='text-primary-color mr-2' />
+                            <span className="pl-3 border-l-2 border-primary-color">Submit A Quote, And Get A Free Estimate Today!</span>
                         </motion.li>
                     </ul>
                 </motion.div>

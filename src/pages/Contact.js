@@ -1,6 +1,8 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 
+import ContactBackground from '../assets/Contact-Background.jpg'
+
 const Contact = () => {
   const { register, handleSubmit, formState: { errors } } = useForm()
 
@@ -11,7 +13,7 @@ const Contact = () => {
   return (
     <div className='flex flex-col'>
       {/* HERO SECTION */}
-      <div className='relative w-full h-96 bg-cover bg-center flex items-center justify-center text-white' style={{ backgroundImage: `url('https://luxecleaning.ca/wp-content/uploads/2023/09/DSC_7310-1024x408.jpg')`}}>
+      <div className='relative w-full h-96 bg-cover bg-center flex items-center justify-center text-white' style={{ backgroundImage: `url('https://images.pexels.com/photos/4682111/pexels-photo-4682111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`}}>
         <div className='text-center'>
           <h1 className='text-4xl font-bold font-montserrat'>Contact Us</h1>
           <p className='text-xl mt-4'>Call Us Today For A Free Cleaning Estimate!</p>
@@ -19,14 +21,28 @@ const Contact = () => {
       </div>
 
       {/*Contact Form Section */}
-      <div className='relative flex justify-center -mt-24'>
-        <div className='bg-white rounded-lg shadow-lg p-8 w-full max-w-4xl'>
+      <div className='font-montserrat relative flex justify-center -mt-24 space-x-8 px-4 md:px-8'>
+        {/* Contact Information Section */}
+        <div className='bg-white rounded-lg shadow-lg p-6 w-full max-w-sm'>
+          <h2 className='text-xl font-bold mb-4'>Contact Information</h2>
+          <p className='mb-4'>We are here to assist you with any inquiries or issues you may have. Feel free to reach out!</p>
+          <p className='font-bold'>Phone:</p>
+          <p className='mb-4'>+1 123-456-7890</p>
+          <p className='font-bold'>Email:</p>
+          <p className='mb-4'>email@example.com</p>
+          <p className='font-bold'>Address:</p>
+          <p className='mb-4'>1234 Main St, Anytown, USA</p>
+          <p className='font-bold'>Business Hours:</p>
+          <p className='mb-4'>Mon-Fri: 9am - 5pm</p>
+        </div>
+
+        <div className='bg-white rounded-lg shadow-lg p-6 w-full max-w-xl'>
           <h1 className='text-2xl font-bold mb-5'>LET'S KEEP IN TOUCH</h1>
           <form onSubmit={handleSubmit(onSubmit)} className='space-y-4'>
             {/* First and Last Name Row */}
             <div className='flex space-x-4'>
               <div className='flex-1'>
-              <label className='block mb-2'>First Name</label>
+              <label className='font-montserrat block mb-2'>First Name</label>
                 <input className='w-full p-2 border border-gray-300 rounded' {...register('firstName', { required: 'First name is required' })} />
                 {errors.firstName && <p className='text-red-500 text-sm mt-1'>{errors.firstName.message}</p>}
               </div>
@@ -60,7 +76,9 @@ const Contact = () => {
               <textarea className='w-full p-2 border border-gray-300 rounded' {...register('message', { required: 'Message is required' })}></textarea>
               {errors.message && <p className='text-red-500 text-sm mt-1'>{errors.message.message}</p>}
             </div>
-            <button type="submit" className="w-full py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Send</button>
+            <button type="submit" className="w-full py-2 px-3 text-white rounded text-sm" style={{ backgroundColor: '#22C3BD' }}>
+              Send
+            </button>          
           </form>
         </div>
       </div>

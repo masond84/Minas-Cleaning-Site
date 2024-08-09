@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -69,6 +69,7 @@ const ReviewSlider = () => {
         prevArrow: <PrevArrow />,
     }
 
+    
     return (
         <section className='py-4 px-4 md:px-8 lg:px-16 bg-white text-center'>
             <h2 className='text-2xl md:text-3xl font-montserrat font-light text-center mb-8'>

@@ -53,11 +53,11 @@ const Header = () => {
                     </li>
                     <li className='relative nav-link'>
                         <NavLink 
-                            to="/faqs" 
+                            to="/about" 
                             activeClassName="text-white bg-black px-4 py-2 rounded" 
                             className="hover:text-black transition-colors duration-200 font-montserrat text-black text-base py-2 px-8"
                         >
-                            FAQS
+                            About
                         </NavLink>
                     </li>
                     <li className='relative nav-link'>

@@ -23,13 +23,12 @@ const About = () => {
               <h1 className="text-3xl font-semibold font-montserrat text-gray-00 mb-4 leading-tight">
                 The History of Minas' Cleaning<sup>®</sup>
               </h1>
-              <h2 className="text-1xl font-montserrat text-gray-50-600 mb-6 italic leading-relaxed">
-                Delivering Home Cleaning You Can See <em>and</em> Feel
+              <h2 className="text-1xl font-montserrat text-gray-50-600 mb-4 italic leading-relaxed">
+                Our Passion To Bring You A Clean <em>and</em> Comfortable Home
               </h2>
-              <p className="text-md text-gray-700 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet sagittis purus, sit amet pharetra nisi tempus ut. Cras aliquet lacus ut turpis lacinia tempor. Morbi bibendum massa vel lectus facilisis, eget posuere neque efficitur. Nulla in lacus id libero interdum varius. Etiam euismod feugiat nunc, eget ultrices risus aliquet in. Fusce consectetur, nisl ac convallis dapibus, est justo viverra ipsum, at lacinia odio orci sed est.
-              </p>
-            </div>
+              <p className="text-md text-gray-700 leading-relaxed">At Minas Cleaning Services, we are a proud bilingual team dedicated to delivering exceptional cleaning services to the Pittsburgh area for over 20 years. Our journey began with a simple passion: to create clean, healthy, and welcoming environments for our clients.</p>
+
+          </div>
         </article>
 
         {/* Image Section */}
@@ -54,7 +53,7 @@ const About = () => {
             <img
               src={imageSrc}
               alt=""
-              className="w-full h-auto object-cover bg-center bg-no-repeat rounded-lg shadow-lg"
+              className="w-full h-full object-cover bg-center bg-no-repeat rounded-lg shadow-lg"
             />
           </figure>
         </div>
@@ -64,45 +63,32 @@ const About = () => {
           <div id="MainContent2" className="content">
             <h3 className="text-2xl font-medium mb-8 text-gray-800 font-montserrat">How it All Began</h3>
             <p className="text-gray-600 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis nisl non elit cursus, ac interdum lectus viverra. Sed feugiat, lectus ac placerat tristique, ex est blandit lacus, nec tempor orci urna et nisi. Duis posuere dictum orci, vel tempus tortor aliquet a. Etiam tincidunt sapien id lacus cursus, ut scelerisque turpis efficitur. Integer id lacus vel dolor pretium ornare ac non eros. Phasellus tincidunt purus et diam auctor mollis. Proin tempor magna sit amet enim euismod, nec interdum magna consequat. Mauris non tortor augue. Proin id felis orci. Nulla volutpat orci id quam suscipit gravida. Fusce tempor, lorem vel pharetra lacinia, ante lectus viverra risus, ac accumsan augue felis non nunc.
+              Over the years, our unwavering dedication to quality and customer satisfaction has allowed us to grow, building lasting relationships with both residential and commercial clients. We've expanded our team, ensuring that every member is trained and certified to uphold the highest standards of cleanliness and professionalism.
             </p>
             <p className="text-gray-600">
-              Nam sit amet sapien vitae libero ultricies suscipit vel non nisi. Phasellus finibus ex eget ligula consequat, id ultrices orci viverra. Vivamus volutpat nibh vitae metus convallis efficitur. Sed dignissim, nisl eu porttitor suscipit, quam lorem fermentum sapien, ut eleifend ante nulla ac erat.
+              Today, Minas Cleaning Services is known throughout Pittsburgh as a leader in the cleaning industry, offering a wide range of services that cater to the unique needs of homes, businesses, and post-construction sites. Our commitment to using eco-friendly products and our responsive, customer-focused approach have remained at the core of our business, ensuring that we continue to provide the highest level of service as we look forward to the next 20 years and beyond.            
             </p>
           </div>
         </div>
 
         {/* Sidebar Navigation Section on the Right */}
         <div className="w-full md:w-1/4 p-4 bg-gray-100 rounded-lg shadow-lg" id="SplitContentWithAsideSideZone">
-          <nav className="side-nav" id="SideNav" aria-label="Navigation menu for About Us" role="menu">
-            <header className="mb-4">
-              <a href="/about-us/" className="block">
-                <h4 className="text-xl font-medium text-gray-800 font-montserrat">About Us</h4>
-              </a>
-            </header>
-            <ul className="space-y-2">
-              <li className="level-1 active selected">
-                <a href="" target="" className="text-gray-600 hover:text-red-600">Company History</a>
-              </li>
-              <li className="level-1 flex">
-                <a href="" target="" className="text-gray-600 hover:text-red-600">Careers</a>
-                <ul className="fly-list el-tab-panel hidden">
-                  <li className="level-2">
-                    <a href="" target="" className="text-gray-600 hover:text-red-600">Job Application</a>
-                  </li>
-                </ul>
-              </li>
-              <li className="level-1">
-                <a href="" target="" className="text-gray-600 hover:text-red-600">Our Commitment</a>
-              </li>
-              <li className="level-1">
-                <a href="" target="" className="text-gray-600 hover:text-red-600">FAQs</a>
-              </li>
-              <li className="level-1">
-                <a href="" target="" className="text-gray-600 hover:text-red-600">Contact Us</a>
-              </li>
-            </ul>
-          </nav>
+          <header className="mb-4">
+            <h4 className="text-xl font-medium text-gray-800 font-montserrat">Services We Offer</h4>
+          </header>
+          <ul className="space-y-2 list-disc list-inside text-gray-600">
+            <li>Residential Cleaning</li>
+            <li>Commercial Cleaning</li>
+            <li>Airbnb Cleaning</li>
+            <li>Post-Construction Cleaning</li>
+            <li>Carpet Cleaning</li>
+            <li>Apartment Cleaning</li>
+            <li>Move-In Cleaning</li>
+            <li>Move-Out Cleaning</li>
+            <li>Deep Cleaning</li>
+            <li>Maid Services</li>
+            <li>Janitorial Services</li>
+          </ul>
         </div>
       </div>
       
