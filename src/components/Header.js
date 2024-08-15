@@ -17,7 +17,7 @@ const Header = () => {
                         <img
                             src={logo}
                             alt='Minas Cleaning Services'
-                            className='h-28'
+                            className='h-36 -mt-2 -mb-2'
                         />
                     </NavLink>
                 </figure>
@@ -35,21 +35,61 @@ const Header = () => {
                     <li className='relative nav-link'>
                         <NavLink 
                             to='/' 
-                            exact 
                             activeClassName="text-white bg-black px-4 py-2 rounded" 
                             className="hover:text-black transition-colors duration-200 font-montserrat text-black text-base py-2 px-8"
                         >
                             Home
                         </NavLink>
                     </li>
-                    <li className='relative nav-link'>
+                    <li className='relative nav-link group'>
                         <NavLink 
-                            to="/services" 
                             activeClassName="text-white bg-black px-4 py-2 rounded" 
                             className="hover:text-black transition-colors duration-200 font-montserrat text-black text-base py-2 px-8"
                         >
                             Services
                         </NavLink>
+                        {/* Dropdown */}
+                        <ul className='absolute left-0 hidden group-hover:block bg-white shadow-lg border border-gray-300 mt-2 w-40 dropdown-menu'>
+                            <li>
+                                <NavLink
+                                    to="/services/residential"
+                                    activeClassName="text-white bg-balack px-4 py-2 rounded"
+                                    className="block px-4 py-2 text-gray-700 hover:text-black hover:bg-gray-100 text-center font-montserrat"
+                                >
+                                    Residential Cleaning
+                                </NavLink>
+                            </li>
+                            <li><hr className="border-gray-300 mx-2 border-t-1" /></li>
+                            <li>
+                                <NavLink
+                                    to="/services/business"
+                                    activeClassName="text-white bg-black px-4 py-2 rounded"
+                                    className="block px-4 py-2 text-gray-700 hover:text-black hover:bg-gray-100 text-center font-montserrat"
+                                >
+                                    Business Cleaning
+                                </NavLink>
+                            </li>
+                            <li><hr className="border-gray-300 mx-2 border-t-1" /></li>
+                            <li>
+                                <NavLink
+                                    to="/services/construction"
+                                    activeClassName="text-white bg-black px-4 py-2 rounded"
+                                    className="block px-4 py-2 text-gray-700 hover:text-black hover:bg-gray-100 text-center font-montserrat"
+                                >
+                                    Construction Cleaning
+                                </NavLink>
+                            </li>
+                            <li><hr className="border-gray-300 mx-2 border-t-1" /></li>
+                            <li>
+                                <NavLink
+                                    to="/services/other-services"
+                                    activeClassName="text-white bg-black px-4 py-2 rounded"
+                                    className="block px-4 py-2 text-gray-700 hover:text-black hover:bg-gray-100 text-center font-montserrat"
+                                >
+                                    Other Services
+                                </NavLink>
+                            </li>
+                        </ul>
                     </li>
                     <li className='relative nav-link'>
                         <NavLink 

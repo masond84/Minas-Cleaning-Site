@@ -1,3 +1,8 @@
+.nav-link {
+    position: relative;
+    padding: 0 1rem;
+}
+
 .nav-link::before {
     content: "";
     display: block;
@@ -12,4 +17,39 @@
 
 .nav-link:first-child::before {
     display: none;
+}
+
+/* Dropdown Bar */
+.nav-link .dropdown-menu {
+    z-index: 1001;
+    position: absolute;
+    left: .1em;
+    right: 0;
+    min-width: 4rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    margin-top: 4px;
+}
+
+.nav-link:hover .dropdown-menu,
+.nav-link:focus-within .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #4a5568;
+    text-decoration: none;
+    width: 100%;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #edf2f7;
+    color: #1a202c;
 }

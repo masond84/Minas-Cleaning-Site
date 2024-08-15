@@ -21,7 +21,7 @@ const Contact = () => {
       </div>
 
       {/*Contact Form Section */}
-      <div className='font-montserrat relative flex justify-center -mt-24 space-x-8 px-4 md:px-8'>
+      <div className='font-montserrat relative flex justify-center -mt-60 space-x-8 px-4 md:px-8'>
         {/* Contact Information Section */}
         <div className='bg-white rounded-lg shadow-lg p-6 w-full max-w-sm'>
           <h2 className='text-xl font-bold mb-4'>Contact Information</h2>
