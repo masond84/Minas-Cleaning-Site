@@ -27,17 +27,12 @@ const Carousel = () => {
                             <h2 className='text-sm md:text-lg font-medium'>RESIDENTIAL CLEANING</h2>
                             <h1 className='text-xl md:text-3xl font-bold mt-2'>Home Cleaning</h1>
                             <p className='text-sm md:text-base mt-4'>From routine cleanings to deep cleans, our residential services are designed to keep your home fresh and inviting for the ones you care about.</p>
-                            <button
-                                style={{
-                                    backgroundColor: 'var(--primary-color)',
-                                    hover: {
-                                        backgroundColor: 'var(--accent-color)',
-                                    },
-                                }} 
-                                className=' text-white font-semibold px-4 py-2 mt-4 rounded transition duration-300 hover:bg-gray-800'
-                                >
-                                    Get A Quote
-                            </button>
+                            <a 
+                                href="/services/get-quote"
+                                className="mt-8 inline-block bg-black text-white font-semibold py-3 px-6 rounded-md hover:bg-gray-900 transition-all duration-300"
+                            >
+                                GET A QUOTE →
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -49,17 +44,12 @@ const Carousel = () => {
                             <h2 className='text-sm md:text-lg font-medium'>COMMERCIAL CLEANING</h2>
                             <h1 className='text-xl md:text-3xl font-bold mt-2'>Business Cleaning</h1>
                             <p className='text-sm md:text-base mt-4'>Our team provides comprehensive cleaning solutions for offices, retail spaces, and more, ensuring a spotless environment for your business.</p>
-                            <button
-                                style={{
-                                    backgroundColor: 'var(--primary-color)',
-                                    hover: {
-                                        backgroundColor: 'var(--accent-color)',
-                                    },
-                                }} 
-                                className=' text-white font-semibold px-4 py-2 mt-4 rounded transition duration-300 hover:bg-gray-800'
-                            >                                
-                                Get A Quote
-                            </button>
+                            <a 
+                                href="/services/get-quote"
+                                className="mt-8 inline-block bg-black text-white font-semibold py-3 px-6 rounded-md hover:bg-gray-900 transition-all duration-300"
+                            >
+                                GET A QUOTE →
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -71,17 +61,12 @@ const Carousel = () => {
                             <h2 className='text-sm md:text-lg font-medium'>MOVING CLEAN-UP</h2>
                             <h1 className='text-xl md:text-3xl font-bold mt-2'>Moving Cleaning</h1>
                             <p className='text-sm md:text-base mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed varius eros, eu placerat.</p>
-                            <button
-                                style={{
-                                    backgroundColor: 'var(--primary-color)',
-                                    hover: {
-                                        backgroundColor: 'var(--accent-color)',
-                                    },
-                                }} 
-                                className=' text-white font-semibold px-4 py-2 mt-4 rounded transition duration-300 hover:bg-gray-800'
-                            >                                
-                                Get A Quote
-                            </button>
+                            <a 
+                                href="/services/get-quote"
+                                className="mt-8 inline-block bg-black text-white font-semibold py-3 px-6 rounded-md hover:bg-gray-900 transition-all duration-300"
+                            >
+                                GET A QUOTE →
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -93,17 +78,12 @@ const Carousel = () => {
                             <h2 className='text-sm md:text-lg font-medium'>SPECIALTY CLEANING SERVICES</h2>
                             <h1 className='text-xl md:text-3xl font-bold mt-2'>Other Services</h1>
                             <p className='text-sm md:text-base mt-4'>Whether it's carpet cleaning, window washing, or post-construction cleanup, we have the skills and tools to handle it all.</p>
-                            <button
-                                style={{
-                                    backgroundColor: 'var(--primary-color)',
-                                    hover: {
-                                        backgroundColor: 'var(--accent-color)',
-                                    },
-                                }} 
-                                className=' text-white font-semibold px-4 py-2 mt-4 rounded transition duration-300 hover:bg-gray-800'
-                            >                                
-                                Get A Quote
-                            </button>
+                            <a 
+                                href="/services/get-quote"
+                                className="mt-8 inline-block bg-black text-white font-semibold py-3 px-6 rounded-md hover:bg-gray-900 transition-all duration-300"
+                            >
+                                GET A QUOTE →
+                            </a>
                         </div>
                     </div>
                 </div>
