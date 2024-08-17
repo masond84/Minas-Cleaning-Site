@@ -1,12 +1,19 @@
 import React from "react"
 
+/* Assets */
+import HomeCardImage from '../assets/images/Home_Cleaning_Card.png'
+import CommercialCardImage from '../assets/images/Office_Cleaning_Card.png'
+import ConstructionCardImage from '../assets/images/Construction_Card_Image.jpg'
+import ServicesCardImage from '../assets/images/Extra_Cleaning_Card.png'
+import ResidentialBackground from '../assets/images/Residential-Space-Hero.jpg'
+
 const ResidentialServices = () => {
     return (
         <div className="-mb-12">
             {/* Hero Section */}
             <div
                 className="relative w-full h-96 bg-cover bg-center flx items-center justify-center"
-                style={{ backgroundImage: `url('https://images.pexels.com/photos/373548/pexels-photo-373548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`}}
+                style={{ backgroundImage: `url(${ResidentialBackground})`}}
             >
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className="relative text-center z-10">
@@ -147,28 +154,24 @@ const ResidentialServices = () => {
                 {/* Hero Banner */}
                 <div className="relative w-full max-w-6xl bg-[#22C3BD] text-white rounded-lg p-8 mb-12 text-center">
                     <h1 className="text-3xl md:text-4xl font-bold font-montserrat">EXPERIENCE YOUR CLEANEST HOME YET</h1>
-                    <a href="#book" className="mt-6 inline-block bg-slate-200 text-black font-extrabold font-montserrat py-3 px-6 rounded-full hover:bg-yellow-500 transition-all duration-300">
+                    <a href="#book" className="mt-6 inline-block bg-slate-200 text-black font-extrabold font-montserrat py-3 px-6 rounded-full hover:bg-teal-100 transition-all duration-300">
                         BOOK ONLINE
                     </a>
                 </div>
 
                 {/* Information Section */}
                 <div className="max-w-4xl text-center">
-                    <h2 className="text-2xl md:text-3xl font-montserrat font-light text-center mb-8">Housekeeping Services, Maid Services, and Recurring Cleaning Services</h2>
+                    <h2 className="text-2xl md:text-3xl font-montserrat font-light text-center mb-8">Housekeeping, Maid, and Recurring Cleaning Services In Pittsburgh</h2>
                     <p className="font-montserrat text-md md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
-                        InsideOut Cleaning is committed to maintaining the highest standards of cleanliness in your home. 
-                        Our housekeeping services encompass many tasks, leaving every corner sparkling and pristine. 
-                        Our recurring cleaning service is perfect for those requiring regular maintenance, ensuring a consistently tidy environment.
-                        Our experienced maid services offer personalized attention to detail, leaving you free to enjoy your space without worry.
+                        Mina's Cleaning Services LLC specializes in maintaining the highest standards of cleanliness for homes across the Pittsburgh area. Serving over 60 satisfied clients, our residential cleaning services are designed to leave your home spotless and welcoming. From routine housekeeping to deep cleaning, our team takes care of every detail, ensuring your living spaces are pristine and comfortable.
                     </p>
                     <p className="font-montserrat text-md md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
-                        We proudly serve residents near Bellevue, Kirkland, and Redmond, WA, bringing unparalleled cleaning expertise to your doorstep.
-                        Our services are tailored to meet the unique needs of these communities, ensuring a clean, healthy environment for every home.
+                        Our services include dusting, vacuuming, sanitizing, and more, all tailored to meet the unique needs of your home. With our recurring cleaning options, you can enjoy a consistently clean and healthy environment, allowing you to focus on what matters most. Trust Mina's Cleaning Services to bring unparalleled expertise and dedication to every room in your house.
                     </p>
                 </div>
             </section>
 
-            <section className="py-16 bg-white text-center">
+            <section className="py-8 bg-white text-center">
                 {/* Main Header */}
                 <h2 className="text-2xl md:text-3xl font-montserrat font-light text-center mb-8">Our Services</h2>
 
@@ -177,7 +180,7 @@ const ResidentialServices = () => {
                     {/* House Cleaning */}
                     <div className="relative bg-white shadow-lg rounded-lg overflow-hidden">
                         <img 
-                            src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg" 
+                            src={HomeCardImage}
                             alt="House Cleaning" 
                             className="w-full h-48 object-cover rounded-t-lg"
                         />
@@ -192,29 +195,28 @@ const ResidentialServices = () => {
                     {/* Apartment Cleaning */}
                     <div className="bg-white shadow-lg rounded-lg overflow-hidden">
                         <img 
-                            src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg" 
+                            src={CommercialCardImage}
                             alt="Apartment Cleaning" 
                             className="w-full h-48 object-cover rounded-t-lg"
                         />
                         <div className="p-6">
                             <h3 className="text-xl font-bold mb-2 font-montserrat">Office & Commercial Cleaning</h3>
                             <p className="text-gray-600">
-                                Keep your apartment shining with our customizable apartment cleaning services.
-                            </p>
+                                Keep your workspace tidy with our tailored office and commercial cleaning services.                          </p>
                         </div>
                     </div>
 
                     {/* Standard Cleaning */}
                     <div className="bg-white shadow-lg rounded-lg overflow-hidden">
                         <img 
-                            src="https://images.pexels.com/photos/1257105/pexels-photo-1257105.jpeg" 
+                            src={ConstructionCardImage}
                             alt="Standard Cleaning" 
                             className="w-full h-48 object-cover rounded-t-lg"
                         />
                         <div className="p-6">
                             <h3 className="text-xl font-bold mb-2 font-montserrat">Post Construction Cleaning</h3>
                             <p className="text-gray-600">
-                                Our standard cleaning service is the perfect service for keeping your home consistently spotless.
+                                Our post-construction cleaning services ensure that your new or renovated space is free from dust, debris, and construction residues, leaving it move in ready.
                             </p>
                         </div>
                     </div>
@@ -222,14 +224,14 @@ const ResidentialServices = () => {
                     {/* Deep Cleaning */}
                     <div className="bg-white shadow-lg rounded-lg overflow-hidden">
                         <img 
-                            src="https://images.pexels.com/photos/1257105/pexels-photo-1257105.jpeg" 
+                            src={ServicesCardImage}
                             alt="Deep Cleaning" 
                             className="w-full h-48 object-cover rounded-t-lg"
                         />
                         <div className="p-6">
                             <h3 className="text-xl font-bold mb-2 font-montserrat">Extra Cleaning</h3>
                             <p className="text-gray-600">
-                                Select a deep cleaning service if you have not had a professional cleaning service into your home before.
+                                Choose our deep cleaning service for a thorough cleanse of every nook and cranny in your home. Perfect for first-time clients or those needing an extra level of care.
                             </p>
                         </div>
                     </div>
@@ -242,7 +244,7 @@ const ResidentialServices = () => {
                     </p>
 
                     <a 
-                        href="/get-a-quote"
+                        href="/services/get-quote"
                         className="mt-8 inline-block bg-black text-white font-semibold py-3 px-6 rounded-md hover:bg-gray-900 transition-all duration-300"
                     >
                         GET A QUOTE →

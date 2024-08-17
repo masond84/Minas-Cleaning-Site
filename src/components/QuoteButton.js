@@ -19,6 +19,7 @@ const QuoteButton = () => {
             fontFamily: 'Montserrat',
             fontWeight: '600',
           }}
+          href='/services/get-quote'
         >
           GET A QUOTE →
         </Button>

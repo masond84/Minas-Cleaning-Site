@@ -13,6 +13,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Header from './components/Header'
 import Footer from './components/Footer'
+import QuoteForm from './pages/Quote-Page';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/services/business' Component={CommercialServices} />
         <Route path='/services/construction' Component={ConstructionServices} />
         <Route path='/services/other-services' Component={OtherServices} />
+        <Route path='/services/get-quote' Component={QuoteForm} />
         <Route path='/about' Component={About} />
         <Route path='/contact' Component={Contact} />
       </Routes>

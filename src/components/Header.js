@@ -107,7 +107,19 @@ const Header = () => {
                             className="hover:text-black transition-colors duration-200 font-montserrat text-black text-base py-2 px-4"
                         >
                             Contact
-                        </NavLink>       
+                        </NavLink>    
+                        {/* Dropdown */}
+                        <ul className='absolute left-0 hidden group-hover:block bg-white shadow-lg border border-gray-300 mt-2 w-40 dropdown-menu'>
+                            <li>
+                                <NavLink
+                                    to="/services/get-quote"
+                                    activeClassName="text-white bg-balack px-4 py-2 rounded"
+                                    className="block px-1 py-2 text-gray-700 hover:text-black hover:bg-gray-100 text-center font-montserrat"
+                                >
+                                    Get A Quote
+                                </NavLink>
+                            </li>
+                        </ul>   
                     </li>
                 </ul>
             </nav>

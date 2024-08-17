@@ -6,6 +6,7 @@ import CommercialCardImage from '../assets/images/Office_Cleaning_Card.png'
 import ConstructionCardImage from '../assets/images/Construction_Card_Image.jpg'
 import ServicesCardImage from '../assets/images/Extra_Cleaning_Card.png'
 import OfficeBackground from '../assets/images/Office-Space-Hero.jpg'
+
 const CommercialServices = () => {
     return (
         <div className="-mb-12">
@@ -82,7 +83,7 @@ const CommercialServices = () => {
                 </div>
             </div>
 
-            <section className="py-16 text-center">
+            <section className="py-12 text-center">
                 {/* Section Header */}
                 <h2 className="text-3xl font-light mb-4 font-montserrat">Commercial Cleaning </h2>
                 <p className="text-lg text-gray-600 mb-12">Keep Your Business and Workspace Spotless and Professional</p>
@@ -157,7 +158,7 @@ const CommercialServices = () => {
                 {/* Hero Banner */}
                 <div className="relative w-full max-w-6xl bg-[#22C3BD] text-white rounded-lg p-8 mb-12 text-center">
                     <h1 className="text-3xl md:text-4xl font-bold font-montserrat">BOOST PRODUCTIVITY WITH A CLEAN WORKSPACE</h1>
-                    <a href="#book" className="mt-6 inline-block bg-slate-200 text-black font-extrabold font-montserrat py-3 px-6 rounded-full hover:bg-yellow-500 transition-all duration-300">
+                    <a href="#book" className="mt-6 inline-block bg-slate-200 text-black font-extrabold font-montserrat py-3 px-6 rounded-full hover:bg-teal-100 transition-all duration-300">
                         SCHEDULE A CONSULTATION
                     </a>
                 </div>
@@ -166,19 +167,15 @@ const CommercialServices = () => {
                 <div className="max-w-4xl text-center">
                     <h2 className="text-2xl md:text-3xl font-montserrat font-light text-center mb-8">Professional Office Cleaning, Janitorial Services, and Recurring Facility Maintenance</h2>
                     <p className="font-montserrat text-md md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
-                        InsideOut Cleaning is committed to maintaining the highest standards of cleanliness in your home. 
-                        Our housekeeping services encompass many tasks, leaving every corner sparkling and pristine. 
-                        Our recurring cleaning service is perfect for those requiring regular maintenance, ensuring a consistently tidy environment.
-                        Our experienced maid services offer personalized attention to detail, leaving you free to enjoy your space without worry.
+                        Mina's Cleaning Services LLC is dedicated to maintaining the highest standards of cleanliness in your workplace. Our office cleaning services cover a wide range of tasks, ensuring every area is spotless and conducive to productivity. With our recurring facility maintenance, your workspace will remain consistently clean and well-maintained, creating a healthy and efficient environment.
                     </p>
                     <p className="font-montserrat text-md md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
-                        We proudly serve residents near Bellevue, Kirkland, and Redmond, WA, bringing unparalleled cleaning expertise to your doorstep.
-                        Our services are tailored to meet the unique needs of these communities, ensuring a clean, healthy environment for every home.
+                        We proudly serve businesses across Pittsburgh, PA, delivering expert cleaning services tailored to meet the unique needs of each facility. Whether it's routine janitorial services or detailed office cleaning, Mina's Cleaning Services is here to ensure your business environment is pristine and professional.
                     </p>
                 </div>
             </section>
 
-            <section className="py-16 bg-white text-center">
+            <section className="py-8 bg-white text-center">
                 {/* Main Header */}
                 <h2 className="text-2xl md:text-3xl font-montserrat font-light text-center mb-8">Our Services</h2>
 
@@ -209,7 +206,7 @@ const CommercialServices = () => {
                         <div className="p-6">
                             <h3 className="text-xl font-bold mb-2 font-montserrat">Office & Commercial Cleaning</h3>
                             <p className="text-gray-600">
-                                Keep your apartment shining with our customizable apartment cleaning services.
+                                Keep your workspace tidy with our tailored office and commercial cleaning services.
                             </p>
                         </div>
                     </div>
@@ -224,7 +221,7 @@ const CommercialServices = () => {
                         <div className="p-6">
                             <h3 className="text-xl font-bold mb-2 font-montserrat">Post Construction Cleaning</h3>
                             <p className="text-gray-600">
-                                Our standard cleaning service is the perfect service for keeping your home consistently spotless.
+                                Our post-construction cleaning services ensure that your new or renovated space is free from dust, debris, and construction residues, leaving it move in ready.
                             </p>
                         </div>
                     </div>
@@ -239,7 +236,7 @@ const CommercialServices = () => {
                         <div className="p-6">
                             <h3 className="text-xl font-bold mb-2 font-montserrat">Extra Cleaning</h3>
                             <p className="text-gray-600">
-                                Select a deep cleaning service if you have not had a professional cleaning service into your home before.
+                                Choose our deep cleaning service for a thorough cleanse of every nook and cranny in your home. Perfect for first-time clients or those needing an extra level of care.
                             </p>
                         </div>
                     </div>
@@ -252,7 +249,7 @@ const CommercialServices = () => {
                     </p>
 
                     <a 
-                        href="/get-a-quote"
+                        href="/services/get-quote"
                         className="mt-8 inline-block bg-black text-white font-semibold py-3 px-6 rounded-md hover:bg-gray-900 transition-all duration-300"
                     >
                         GET A QUOTE →

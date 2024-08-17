@@ -110,11 +110,11 @@ const About = () => {
             aria-controls='panel1a-content'
             id='panel1a-header'
           >
-            <Typography sx={{ fontWeight: 600, fontFamily: 'Montserrat'}}>Question 1</Typography>
+            <Typography sx={{ fontWeight: 600, fontFamily: 'Montserrat'}}>Q: Do I need to bring my own cleaning supplies?</Typography>
           </AccordionSummary>
           <AccordionDetails className="bg-white text-gray-800 p-4 rounded-b-lg shadow-inner">
-            <Typography>
-              Answer to Question 1
+            <Typography className='text-slate-800'>
+              A: No, you don’t need to worry about providing any cleaning supplies. Mina's Cleaning Services LLC brings all the necessary equipment and eco-friendly products to ensure your home is cleaned to the highest standards.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -129,11 +129,11 @@ const About = () => {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <Typography sx={{ fontWeight: 600, fontFamily: 'Montserrat'}}>Question 2</Typography>
+            <Typography sx={{ fontWeight: 600, fontFamily: 'Montserrat'}}>Q: Are your services pet-friendly and eco-friendly?</Typography>
           </AccordionSummary>
           <AccordionDetails className="bg-white text-gray-800 p-4 rounded-b-lg shadow-inner">
-            <Typography>
-              Answer to Question 2
+            <Typography className='text-slate-800'>
+              A: Yes, we take pride in using pet-safe and eco-friendly cleaning products. We ensure that our cleaning methods are safe for your pets and the environment while still providing effective cleaning results.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -148,11 +148,11 @@ const About = () => {
             aria-controls="panel3a-content"
             id="panel3a-header"
           >
-            <Typography sx={{ fontWeight: 600, fontFamily: 'Montserrat'}}>Question 3</Typography>
+            <Typography sx={{ fontWeight: 600, fontFamily: 'Montserrat'}}>Q: Do I need to do anything to prepare for my cleaning visit?</Typography>
           </AccordionSummary>
           <AccordionDetails className="bg-white text-gray-800 p-4 rounded-b-lg shadow-inner">
-            <Typography>
-              Answer to Question 3
+            <Typography className='text-slate-800'>
+              A: To ensure the best results, we recommend that you tidy up personal items and any clutter before our team arrives. This allows us to focus on deep cleaning rather than organizing. If there are any specific areas you'd like us to focus on, feel free to let us know ahead of time.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -167,11 +167,11 @@ const About = () => {
             aria-controls="panel4a-content"
             id="panel4a-header"
           >
-            <Typography sx={{ fontWeight: 600, fontFamily: 'Montserrat'}}>Question 4</Typography>
+            <Typography sx={{ fontWeight: 600, fontFamily: 'Montserrat'}}>Q: How often can I schedule your cleaning services?</Typography>
           </AccordionSummary>
           <AccordionDetails className="bg-white text-gray-800 p-4 rounded-b-lg shadow-inner">
-            <Typography>
-              Answer to Question 4
+            <Typography className='text-slate-800'>
+              A: We offer flexible scheduling options to fit your needs. You can choose from weekly, bi-weekly, or monthly cleaning services. We also offer one-time deep cleaning services for special occasions or as needed.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -186,11 +186,11 @@ const About = () => {
             aria-controls="panel5a-content"
             id="panel5a-header"
           >
-            <Typography sx={{ fontWeight: 600, fontFamily: 'Montserrat'}}>Question 5</Typography>
+            <Typography sx={{ fontWeight: 600, fontFamily: 'Montserrat'}}>Q: Do you work with houses and companies of all sizes?</Typography>
           </AccordionSummary>
           <AccordionDetails className="bg-white text-gray-800 p-4 rounded-b-lg shadow-inner">
-            <Typography>
-              Answer to Question 5
+            <Typography className='text-slate-800'>
+              A: Yes, Mina's Cleaning Services LLC caters to both residential homes and commercial properties of all sizes. Whether you need cleaning for a small apartment or a large office building, our team is equipped to handle it with the same level of professionalism and care.
             </Typography>
           </AccordionDetails>
         </Accordion>

@@ -12,16 +12,19 @@ const Contact = () => {
 
   return (
     <div className='flex flex-col'>
-      {/* HERO SECTION */}
-      <div className='relative w-full h-96 bg-cover bg-center flex items-center justify-center text-white' style={{ backgroundImage: `url('https://images.pexels.com/photos/4682111/pexels-photo-4682111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`}}>
-        <div className='text-center'>
-          <h1 className='text-4xl font-bold font-montserrat'>Contact Us</h1>
-          <p className='text-xl mt-4'>Call Us Today For A Free Cleaning Estimate!</p>
-        </div>
+     {/* Hero Section */}
+    <div
+        className="relative w-full h-96 bg-cover bg-center flx items-center justify-center"
+        style={{ backgroundImage: `url(${ContactBackground})`}}
+    >
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="relative text-center z-10">
+          <h1 className="text-4xl md:text-5xl font-bold font-montserrat text-white pt-8">Contact Us</h1>
       </div>
+    </div>
 
       {/*Contact Form Section */}
-      <div className='font-montserrat relative flex justify-center -mt-60 space-x-8 px-4 md:px-8'>
+      <div className='font-montserrat relative flex justify-center -mt-64 space-x-8 px-4 md:px-8'>
         {/* Contact Information Section */}
         <div className='bg-white rounded-lg shadow-lg p-6 w-full max-w-sm'>
           <h2 className='text-xl font-bold mb-4'>Contact Information</h2>
@@ -81,6 +84,20 @@ const Contact = () => {
             </button>          
           </form>
         </div>
+      </div>
+
+      {/* Quote Section */}
+      <div className="mt-12 bg-white text-center">
+          <p className="text-2xl font-bold text-center font-montserrat">
+              Let our certified staff sweat the details so you don’t have to.    
+          </p>
+
+          <a 
+              href="/services/get-quote"
+              className="mt-8 inline-block bg-black text-white font-semibold py-3 px-6 rounded-md hover:bg-gray-900 transition-all duration-300"
+          >
+              GET A QUOTE →
+          </a>
       </div>
     </div>
   );

@@ -93,7 +93,7 @@ const Footer = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={4} textAlign={{ xs: 'center', md: 'right' }}>
-                        <Link href="#" color="inherit" sx={{ textDecoration: "none", fontFamily: "Montserrat", fontWeight: '600',  fontSize: 'small'}}>
+                        <Link href="/contact" color="inherit" sx={{ textDecoration: "none", fontFamily: "Montserrat", fontWeight: '600',  fontSize: 'small'}}>
                             Get In Touch
                         </Link>
                         <br />
