@@ -6,9 +6,6 @@ import { useNavigate } from 'react-router-dom';
 const QuoteButton = () => {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate('/services/get-quote');
-  }
 
   return (
     <div className="flex justify-center mt-4">
@@ -27,7 +24,7 @@ const QuoteButton = () => {
             fontFamily: 'Montserrat',
             fontWeight: '600',
           }}
-          onClick={handleClick}
+          onClick={() => navigate('/services/get-quote')}
         >
           GET A QUOTE →
         </Button>

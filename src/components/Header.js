@@ -22,10 +22,10 @@ const Header = () => {
                     </NavLink>
                 </figure>
                 <nav className="flex space-x-10 flex-1 justify-end">
-                    <a href="https://www.facebook.com/minascleaningservicesllc/" title='Facebook'target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 transition-colors duration-200">
+                    <a href="https://www.facebook.com/profile.php?id=61561913789003" title='Facebook'target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 transition-colors duration-200">
                         <FontAwesomeIcon icon={faFacebook} className='text-2xl' />
                     </a>
-                    <a href='https://www.instagram.com/minascleaningservices/?hl=en' title='Instagram' target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 transition-colors duration-200">
+                    <a href='https://www.instagram.com/minasservices?igsh=cTgyMmRodmp4Zmlg' title='Instagram' target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 transition-colors duration-200">
                         <FontAwesomeIcon icon={faInstagram} className='text-2xl'/>
                     </a>
                 </nav>

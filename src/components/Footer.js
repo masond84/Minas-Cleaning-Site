@@ -57,23 +57,23 @@ const Footer = () => {
                 <Grid container spacing={4} alignItems="center">
                     <Grid item xs={12} md={4}>
                         <Typography variant="body1" py={1}>
-                            <Link href="mailto:JustLikeMommaCleans@gmail.com" color="inherit" sx={{ textDecoration: "none", fontFamily: "Montserrat", fontWeight: '600', fontSize: 'small'}}>
-                                JustLikeMommaCleans@gmail.com
+                            <Link href="mailto:minascleaning05@gmail.com" color="inherit" sx={{ textDecoration: "none", fontFamily: "Montserrat", fontWeight: '600', fontSize: 'small'}}>
+                                minascleaning05@gmail.com
                             </Link>
                         </Typography>
                         <Typography variant="body1" py={1}>
-                            <Link href="tel:2043819311" color="inherit" sx={{ textDecoration: "none", fontFamily: "Montserrat", fontWeight: '600',  fontSize: 'small'}}>
-                                401.834.5778
+                            <Link href="tel:4129567583" color="inherit" sx={{ textDecoration: "none", fontFamily: "Montserrat", fontWeight: '600',  fontSize: 'small'}}>
+                                412.956.7583
                             </Link>
                         </Typography>
                         <Typography variant="body1" py={1} sx={{ textDecoration: "none", fontFamily: "Montserrat", fontWeight: '600',  fontSize: 'small'}}>
-                            Central Falls, United States, Rhode Island
+                            Pittsburgh, PA, United States, Pennsylvania
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                             <IconButton
-                                href="https://www.facebook.com/minascleaningservicesllc/"
+                                href="https://www.facebook.com/profile.php?id=61561913789003"
                                 title="Facebook"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -82,7 +82,7 @@ const Footer = () => {
                                 <FontAwesomeIcon icon={faFacebook} size="lg" />
                             </IconButton>
                             <IconButton
-                                href="https://www.instagram.com/minascleaningservices/?hl=en"
+                                href="https://www.instagram.com/minasservices?igsh=cTgyMmRodmp4Zmlg"
                                 title="Instagram"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -95,10 +95,6 @@ const Footer = () => {
                     <Grid item xs={12} md={4} textAlign={{ xs: 'center', md: 'right' }}>
                         <Link href="/contact" color="inherit" sx={{ textDecoration: "none", fontFamily: "Montserrat", fontWeight: '600',  fontSize: 'small'}}>
                             Get In Touch
-                        </Link>
-                        <br />
-                        <Link href="#" color="inherit" py={1} sx={{ textDecoration: "none", fontFamily: "Montserrat", fontWeight: '600',  fontSize: 'small'}}>
-                            Work With Minas'
                         </Link>
                         <br />
                         <Link href="#" color="inherit" sx={{ textDecoration: "none", fontFamily: "Montserrat", fontWeight: '600',  fontSize: 'small'}}>
