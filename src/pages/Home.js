@@ -8,7 +8,6 @@ import CleaningVideo from '../assets/Cleaning_Home_Main.mp4';
 
 import Slider from '../components/Slider';
 import ReviewSlider from '../components/ReviewSlider';
-import QuoteButton from '../components/QuoteButton';
 const listItemVariants = {
     hidden: { opacity: 0, y: 50},
     visible: { opacity: 1, y: 0},
@@ -31,7 +30,7 @@ const Home = () => {
                     Your browser does not support the video tag
                 </video>
                 <div className='absolute inset-0 flex flex-col items-center justify-center'>
-                    <div className='glassmorphism  text-center p-10 md:p-16 rounded w-11/12 md:w-3/4 lg:w-1/2'>
+                    <div className='glassmorphism  text-center p-10 md:p-16 rounded w-8/12 md:w-3/4 lg:w-1/2'>
                         <h1 
                             className="text-2xl md:text-4xl font-montserrat font-semibold mb-4"
                             style={{ color: 'var(--white)'}}
@@ -39,7 +38,7 @@ const Home = () => {
                         CLEAN SPACE, HAPPY SPACE    
                         </h1>
                         <p 
-                            className='font-montserrat text-lg md:text-xl mb-6'
+                            className='font-montserrat text-base sm:text-lg md:text-xl mb-6'
                             style={{ color: 'var(--white)'}}
                         >
                             We offer top-notch cleaning services that will leave your space sparkling clean and those in it smiling!

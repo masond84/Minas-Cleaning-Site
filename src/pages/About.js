@@ -186,11 +186,11 @@ const About = () => {
             aria-controls="panel5a-content"
             id="panel5a-header"
           >
-            <Typography sx={{ fontWeight: 600, fontFamily: 'Montserrat'}}>Q: Do you work with houses and companies of all sizes?</Typography>
+            <Typography sx={{ fontWeight: 600, fontFamily: 'Montserrat'}}>Q: What payment options are can I use for cleaning services</Typography>
           </AccordionSummary>
           <AccordionDetails className="bg-white text-gray-800 p-4 rounded-b-lg shadow-inner">
             <Typography className='text-slate-800'>
-              A: Yes, Mina's Cleaning Services LLC caters to both residential homes and commercial properties of all sizes. Whether you need cleaning for a small apartment or a large office building, our team is equipped to handle it with the same level of professionalism and care.
+              A: We offer a variety of payment options to fit varying customer needs. You can pay for our services using Cash, Venmo, PayPal, or Zelle. Simply choose the method that works best for you when arranging your quote.
             </Typography>
           </AccordionDetails>
         </Accordion>
