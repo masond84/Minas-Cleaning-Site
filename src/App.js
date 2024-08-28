@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import ResidentialServices from './pages/Residential-Services';
 import CommercialServices from './pages/Commercial-Services';
-import ConstructionServices from './pages/Construction-Services';
+import MovingServices from './pages/Moving-Services';
 import OtherServices from './pages/Other-Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -24,7 +24,7 @@ function App() {
         <Route path='/services' Component={Services} />
         <Route path='/services/residential' Component={ResidentialServices} />
         <Route path='/services/business' Component={CommercialServices} />
-        <Route path='/services/construction' Component={ConstructionServices} />
+        <Route path='/services/moving' Component={MovingServices} />
         <Route path='/services/other-services' Component={OtherServices} />
         <Route path='/services/get-quote' Component={QuoteForm} />
         <Route path='/about' Component={About} />

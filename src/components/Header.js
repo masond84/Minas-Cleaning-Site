@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 /* Assets */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import logo from '../assets/Minas-Logo-sm.svg'
 /* Styles */
 import '../assets/styles/header.css'
 
 const Header = () => {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen)
+    }
+
     return (
         <header className='w-full bg-white border-b border-gray-300'>
             <div className="flex justify-between items-center max-w-6xl mx-auto py-1 px-4">
@@ -72,11 +79,11 @@ const Header = () => {
                             <li><hr className="border-gray-300 mx-2 border-t-1" /></li>
                             <li>
                                 <NavLink
-                                    to="/services/construction"
+                                    to="/services/Moving"
                                     activeClassName="text-white bg-black px-4 py-2 rounded"
                                     className="block px-4 py-2 text-gray-700 hover:text-black hover:bg-gray-100 text-center font-montserrat"
                                 >
-                                    Construction Cleaning
+                                    Moving Cleaning
                                 </NavLink>
                             </li>
                             <li><hr className="border-gray-300 mx-2 border-t-1" /></li>

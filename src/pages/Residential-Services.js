@@ -214,9 +214,9 @@ const ResidentialServices = () => {
                             className="w-full h-48 object-cover rounded-t-lg"
                         />
                         <div className="p-6">
-                            <h3 className="text-xl font-bold mb-2 font-montserrat">Post Construction Cleaning</h3>
+                            <h3 className="text-xl font-bold mb-2 font-montserrat">Move-In & Move-Out Cleaning</h3>
                             <p className="text-gray-600">
-                                Our post-construction cleaning services ensure that your new or renovated space is free from dust, debris, and construction residues, leaving it move in ready.
+                                Our moving cleaning services ensure that your new or renovated space is free from dust, debris, and residues, leaving it move in ready.
                             </p>
                         </div>
                     </div>

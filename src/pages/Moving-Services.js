@@ -5,20 +5,20 @@ import HomeCardImage from '../assets/images/Home_Cleaning_Card.png'
 import CommercialCardImage from '../assets/images/Office_Cleaning_Card.png'
 import ConstructionCardImage from '../assets/images/Construction_Card_Image.jpg'
 import ServicesCardImage from '../assets/images/Extra_Cleaning_Card.png'
-import ConstructionBackground from '../assets/images/Construction-Hero.jpeg'
+import MovingBackground from '../assets/images/Moving-Hero.jpg'
 
-const ConstructionServices = () => {
+const MovingServices = () => {
     return (
         <div className="-mb-12">
             {/* Hero Section */}
             <div
                 className="relative w-full h-96 bg-cover bg-center flx items-center justify-center"
-                style={{ backgroundImage: `url(${ConstructionBackground})`}}
+                style={{ backgroundImage: `url(${MovingBackground})`}}
             >
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className="relative text-center z-10">
-                    <h1 className="text-4xl md:text-5xl font-bold font-montserrat text-white pt-8">Post Construction Cleaning Services</h1>
-                    <p className="text-xl md:text-2xl mt-8 text-white">Thorough Cleaning for Newly Built or Renovated Spaces</p>
+                    <h1 className="text-4xl md:text-5xl font-bold font-montserrat text-white pt-8">Moving & Move-In Cleaning Services</h1>
+                    <p className="text-xl md:text-2xl mt-8 text-white">Thorough Cleaning For A Quick In And Out Into Your New Spaces</p>
                 </div>
             </div>
 
@@ -67,6 +67,7 @@ const ConstructionServices = () => {
                             <option value="residential">Residential Cleaning</option>
                             <option value="commercial">Commercial Cleaning</option>
                             <option value="moving">Moving Cleaning</option>
+                            <option value="moving">Other Cleaning Services</option>
                         </select>
                         </div>
                         {/* Message Field */}
@@ -85,27 +86,27 @@ const ConstructionServices = () => {
 
             <section className="py-16 text-center">
                 {/* Section Header */}
-                <h2 className="text-3xl font-light mb-4 font-montserrat">Post Construction Cleaning </h2>
-                <p className="text-lg text-gray-600 mb-12">Ensure Your New Space is Move-In Ready with Our Expert Services</p>
+                <h2 className="text-3xl font-light mb-4 font-montserrat">Move-In/Move-Out Cleaning Services</h2>
+                <p className="text-lg text-gray-600 mb-12">Make Your Move Hassle-Free with Our Various Cleaning Solutions</p>
             
                 {/* Services Areas */}
                 <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid--cols-3 gap-8 text-center">
                     {/* Kitchen */}
                     <div>
-                        <h3 className="text-xl font-bold mb-4 font-montserrat">Debris Removal</h3>
+                        <h3 className="text-xl font-bold mb-4 font-montserrat">Home Preperation</h3>
                         <ul className="text-gray-700 space-y-2">
-                            <li>Remove leftover construction debris</li>
-                            <li>Dispose of materials safely and efficiently</li>
-                            <li>Ensure compliance with local disposal regulations</li>
+                            <li>Clean, dust,and sanitize all rooms before moving in</li>
+                            <li>Remove any remnants from previous tenants</li>
+                            <li>Ensure a fresh start in your new space</li>
                         </ul>
                     </div>
                     
                     {/* Bathrooms */}
                     <div>
-                        <h3 className="text-xl font-bold mb-4 font-montserrat">Surface Cleaning</h3>
+                        <h3 className="text-xl font-bold mb-4 font-montserrat">Deep Surface Cleaning</h3>
                         <ul className="text-gray-700 space-y-2">
                             <li>Thorough cleaning of walls, floors, and ceilings</li>
-                            <li>Removal of dust, dirt, and adhesive residues</li>
+                            <li>Removal of dust, dirt, and grime residues</li>
                             <li>Polishing of surfaces for a pristine finish</li>
                         </ul>
                     </div>
@@ -159,7 +160,7 @@ const ConstructionServices = () => {
                         Comprehensive Cleaning Services for Every Step of Your Project
                     </h2>
                     <p className="font-montserrat text-md md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
-                        Mina's Cleaning Services LLC offers thorough post-construction cleaning to ensure every inch of your newly built or renovated space is immaculate. We tackle the toughest cleaning challenges, leaving your space pristine and ready for occupancy.
+                        Mina's Cleaning Services LLC offers thorough moving cleaning to ensure every inch of your newly built or renovated space is immaculate. We tackle the toughest cleaning challenges, leaving your space pristine and ready for occupancy.
                     </p>
                     <p className="font-montserrat text-md md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
                         Whether you're finishing a small home renovation or completing a large commercial project, our experienced team delivers a spotless, move-in-ready environment, so you can focus on enjoying your new space without the stress of cleanup.
@@ -211,9 +212,9 @@ const ConstructionServices = () => {
                             className="w-full h-48 object-cover rounded-t-lg"
                         />
                         <div className="p-6">
-                            <h3 className="text-xl font-bold mb-2 font-montserrat">Post Construction Cleaning</h3>
+                            <h3 className="text-xl font-bold mb-2 font-montserrat">Move-In & Move-Out Cleaning</h3>
                             <p className="text-gray-600">
-                                Our post-construction cleaning services ensure that your new or renovated space is free from dust, debris, and construction residues, leaving it move in ready.
+                                Our moving cleaning services ensure that your new or renovated space is free from dust, debris, and residues, leaving it move in ready.
                             </p>
                         </div>
                     </div>
@@ -252,4 +253,4 @@ const ConstructionServices = () => {
     )
 }
 
-export default ConstructionServices;
+export default MovingServices;
