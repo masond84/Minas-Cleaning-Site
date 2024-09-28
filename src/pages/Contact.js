@@ -1,14 +1,42 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useForm } from 'react-hook-form'
+import emailjs from '@emailjs/browser'
 
 import ContactBackground from '../assets/Contact-Background.jpg'
 
 const Contact = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm()
+  const { register, handleSubmit, formState: { errors }, reset } = useForm()
+  const [phone, setPhone] = useState("");
 
   const onSubmit = (data) => {
-    console.log(data)
+    const finalData = { ...data, phone };
+
+    emailjs.send(
+      'service_vhfzeuh', 
+      'contact-form', 
+      finalData, 
+      'Y9pFvWvP1G9XnfRKN'
+    )
+    .then((result) => {
+      console.log('Email successfully sent!', result.text);
+      alert('Your message has been sent successfully!');
+      reset(); // Reset the form after submission
+      setPhone("");
+    }, (error) => {
+      console.log('Failed to send email.', error.text);
+      alert('Failed to send your message, please try again later.');
+    });
   }
+
+  const handlePhoneChange = (e) => {
+    let value = e.target.value.replace(/\D/g, ""); // Remove all non-digit characters
+    if (value.length > 3 && value.length <= 6) {
+        value = `${value.slice(0, 3)}-${value.slice(3)}`;
+    } else if (value.length > 6) {
+        value = `${value.slice(0, 3)}-${value.slice(3, 6)}-${value.slice(6, 10)}`;
+    }
+    setPhone(value);
+  };
 
   return (
     <div className='flex flex-col'>
@@ -44,12 +72,12 @@ const Contact = () => {
             <div className='flex space-x-4'>
               <div className='flex-1'>
               <label className='font-montserrat block mb-2'>First Name</label>
-                <input className='w-full p-2 border border-gray-300 rounded' {...register('firstName', { required: 'First name is required' })} />
+                <input name="firstName" className='w-full p-2 border border-gray-300 rounded' {...register('firstName', { required: 'First name is required' })} />
                 {errors.firstName && <p className='text-red-500 text-sm mt-1'>{errors.firstName.message}</p>}
               </div>
               <div className='flex-1'>
                 <label className='block mb-2'>Last Name</label>
-                <input className='w-full p-2 border border-gray-300 rounded' {...register('lastName', { required: 'Last name is required' })} />
+                <input name="lastName" className='w-full p-2 border border-gray-300 rounded' {...register('lastName', { required: 'Last name is required' })} />
                 {errors.lastName && <p className='text-red-500 text-sm mt-1'>{errors.lastName.message}</p>}
               </div>
             </div>
@@ -62,8 +90,13 @@ const Contact = () => {
             {/* Telephone Field */}
             <div>
               <label className='block mb-2'>Phone</label>
-              <input type="tel" className='w-full p-2 border border-gray-300 rounded' {...register('phone', { required: 'Phone number is required' })} />
-              {errors.phone && <p className='text-red-500 text-sm mt-1'>{errors.phone.message}</p>}
+              <input 
+                type="tel" 
+                value={phone} 
+                onChange={handlePhoneChange} 
+                className='w-full p-2 border border-gray-300 rounded' 
+                required
+              />
             </div>
             {/* Subject Field */}
             <div>

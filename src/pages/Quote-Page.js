@@ -1,14 +1,51 @@
-import React from "react"
+import React, {useRef, useState} from "react"
+import emailjs from '@emailjs/browser'
 
-const QuoteForm = () => {
+const GeneralQuoteForm = () => {
+    const form = useRef()
+    const [phone, setPhone] = useState("");
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_vhfzeuh', // Your EmailJS Service ID
+            'g-quote-form', // Your EmailJS Template ID
+            form.current,
+            'Y9pFvWvP1G9XnfRKN' // Your EmailJS Public Key
+        )
+        .then((result) => {
+            console.log('Email successfully sent!', result.text);
+            alert('Your request has been sent successfully!');
+        }, (error) => {
+            console.log('Failed to send email.', error.text);
+            alert('Failed to send your request, please try again later.');
+        });
+
+        e.target.reset();
+    }
+
+    const handlePhoneChange = (e) => {
+        let value = e.target.value.replace(/\D/g, ""); // Remove all non-digit characters
+        if (value.length > 3 && value.length <= 6) {
+            value = `${value.slice(0, 3)}-${value.slice(3)}`;
+        } else if (value.length > 6) {
+            value = `${value.slice(0, 3)}-${value.slice(3, 6)}-${value.slice(6, 10)}`;
+        }
+        setPhone(value);
+    };
+
     return (
-        <div className="min-h-screen flex justify-center py-8">
+        <div 
+            className="min-h-screen flex justify-center py-8"
+            style={{ backgroundColor: '#f9f9f9'}}
+        >
             <div className="bg-white shadow-md rounded-lg w-full max-w-4xl p-8">
                 <h1 className="text-3xl font-medium mb-6 text-center font-montserrat">
                     Get a Cleaning Quote
                 </h1>
 
-                <form>
+                <form ref={form} onSubmit={sendEmail}>
                     {/* Contact Information Section */}
                     <div className="mb-6">
                         <h2 className="text-xl font-medium font-montserrat mb-4">
@@ -55,6 +92,8 @@ const QuoteForm = () => {
                                     name="phone"
                                     className="border border-gray-300 rounded-lg p-2"
                                     placeholder="Phone Number"
+                                    value={phone}
+                                    onChange={handlePhoneChange}
                                     required
                                 />
                             </div>
@@ -136,6 +175,8 @@ const QuoteForm = () => {
                                     className="border border-gray-300 rounded-lg p-2"
                                     placeholder="Zip"
                                     required
+                                    pattern="^\d{5}(-\d{4})?$" // Regex for 5-digit or 9-digit zip code format
+                                    title="Please enter a valid zip code."
                                 />
                             </div>
                         </div>
@@ -155,19 +196,19 @@ const QuoteForm = () => {
                                 </label>
                                 <div className="flex gap-4">
                                     <label className="flex items-center">
-                                        <input type="checkbox" className="mr-2" value="home" />
+                                        <input type="checkbox" name="cleaningService" className="mr-2" value="home" />
                                         Home
                                     </label>
                                     <label className="flex items-center">
-                                        <input type="checkbox" className="mr-2" value="business" />
+                                        <input type="checkbox" name="cleaningService" className="mr-2" value="business" />
                                         Business
                                     </label>
                                     <label className="flex items-center">
-                                        <input type="checkbox" className="mr-2" value="business" />
+                                        <input type="checkbox" name="cleaningService" className="mr-2" value="business" />
                                         Construction
                                     </label>
                                     <label className="flex items-center">
-                                        <input type="checkbox" className="mr-2" value="business" />
+                                        <input type="checkbox" name="cleaningService" className="mr-2" value="business" />
                                         Extra
                                     </label>
                                 </div>
@@ -245,15 +286,15 @@ const QuoteForm = () => {
                                 </label>
                                 <div className="flex gap-4">
                                     <label className="flex items-center">
-                                        <input type="checkbox" className="mr-2" value="anytime" />
+                                        <input type="checkbox" name="cleaningTime" className="mr-2" value="anytime" />
                                         Anytime
                                     </label>
                                     <label className="flex items-center">
-                                        <input type="checkbox" className="mr-2" value="morning" />
+                                        <input type="checkbox" name="cleaningTime" className="mr-2" value="morning" />
                                         Morning
                                     </label>
                                     <label className="flex items-center">
-                                        <input type="checkbox" className="mr-2" value="afternoon" />
+                                        <input type="checkbox" name="cleaningTime" className="mr-2" value="afternoon" />
                                         Afternoon
                                     </label>
                                 </div>
@@ -324,4 +365,4 @@ const QuoteForm = () => {
     )
 }
 
-export default QuoteForm
+export default GeneralQuoteForm

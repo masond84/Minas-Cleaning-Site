@@ -1,4 +1,5 @@
 import React from "react"
+import QuoteForm from '../components/forms/QuoteForm';
 
 /* Assets */
 import HomeCardImage from '../assets/images/Home_Cleaning_Card.png'
@@ -27,59 +28,7 @@ const ResidentialServices = () => {
                 {/* Service Quote Form */}
                 <div className='bg-white rounded-lg shadow-lg p-6 w-full max-w-2xl'>
                     <h2 className='text-2xl font-bold mb-5 text-center font-montserrat'>Get a Free Quote</h2>
-                    <form  className='space-y-4'>
-                        {/* Name Row */}
-                        <div className='flex space-x-4'>
-                        <div className='flex-1'>
-                            <label className='font-montserrat block mb-2'>First Name</label>
-                            <input 
-                            className='w-full p-2 border border-gray-300 rounded' 
-                            />
-                        </div>
-                        <div className='flex-1'>
-                            <label className='block mb-2'>Last Name</label>
-                            <input 
-                            className='w-full p-2 border border-gray-300 rounded' 
-                            />
-                        </div>
-                        </div>
-                        {/* Email Field */}
-                        <div>
-                        <label className='block mb-2'>Email</label>
-                        <input 
-                            type='email' 
-                            className='w-full p-2 border border-gray-300 rounded'
-                        />
-                        </div>
-                        {/* Telephone Field */}
-                        <div>
-                        <label className='block mb-2'>Phone</label>
-                        <input 
-                            type="tel" 
-                            className='w-full p-2 border border-gray-300 rounded' 
-                        />
-                        </div>
-                        {/* Service Type Field */}
-                        <div>
-                        <label className='block mb-2'>Service Type</label>
-                        <select className='w-full p-2 border border-gray-300 rounded' defaultValue="residential">
-                            <option value="">Select Service Type</option>
-                            <option value="residential">Residential Cleaning</option>
-                            <option value="commercial">Commercial Cleaning</option>
-                            <option value="moving">Moving Cleaning</option>
-                        </select>
-                        </div>
-                        {/* Message Field */}
-                        <div>
-                        <label className='block mb-2'>Message</label>
-                        <textarea 
-                            className='w-full p-2 border border-gray-300 rounded' 
-                        ></textarea>
-                        </div>
-                        <button type="submit" className="w-full py-2 px-3 text-white rounded text-sm" style={{ backgroundColor: '#22C3BD' }}>
-                        Get Quote
-                        </button>          
-                    </form>
+                    <QuoteForm defaultServiceType="residential"/>
                 </div>
             </div>
 
