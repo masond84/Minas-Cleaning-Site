@@ -62,7 +62,7 @@ const CommercialServices = () => {
                         {/* Service Type Field */}
                         <div>
                         <label className='block mb-2'>Service Type</label>
-                        <select className='w-full p-2 border border-gray-300 rounded' >
+                        <select className='w-full p-2 border border-gray-300 rounded' defaultValue="commercial">
                             <option value="">Select Service Type</option>
                             <option value="residential">Residential Cleaning</option>
                             <option value="commercial">Commercial Cleaning</option>

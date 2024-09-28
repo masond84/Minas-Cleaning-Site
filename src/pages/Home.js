@@ -44,12 +44,9 @@ const Home = () => {
                             We offer top-notch cleaning services that will leave your space sparkling clean and those in it smiling!
                         </p>
                         <button 
-                            className=' text-white font-montserrat px-6 py-3 rounded transition duration-300 hover:bg-gray-800'
-                            style={{
+                                className="text-white font-montserrat px-6 py-3 rounded transition duration-300 hover:bg-[#1A9F96] hover:shadow-lg"
+                                style={{
                                 backgroundColor: 'var(--primary-color)',
-                                hover: {
-                                    backgroundColor: 'var(--accent-color)',
-                                },
                             }}
                             onClick={() => navigate('/services/get-quote')}
                         >
@@ -164,10 +161,10 @@ const Home = () => {
                             </Typography>
                             <div className='flex justify-center mt-4'>
                             <div 
-                                className="relative w-[200px] h-[50px] bg-white text-blue-500 font-montserrat font-semibold rounded shadow-lg border-2 border-blue-500"
+                                className="relative w-[200px] h-[50px] bg-white text-blue-500 font-montserrat font-semibold rounded shadow-lg"
                             >
                                 <button
-                                    className="w-full h-full flex items-center justify-center bg-transparent border-none"
+                                    className="w-full h-full flex items-center justify-center text-white font-montserrat px-6 py-3 rounded transition duration-300 bg-[var(--primary-color)] hover:bg-[#1A9F96] hover:shadow-lg"
                                     onClick={() => navigate('/services/get-quote')}
                                 >
                                     GET A QUOTE →

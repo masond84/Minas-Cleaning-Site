@@ -86,7 +86,7 @@ const OtherServices = () => {
                 {/* Hero Banner */}
                 <div className="relative w-full max-w-6xl bg-[#22C3BD] text-white rounded-lg p-8 mb-12 text-center">
                     <h1 className="text-3xl md:text-4xl font-bold font-montserrat">BOOST PRODUCTIVITY WITH A CLEAN WORKSPACE</h1>
-                    <a href="#book" className="mt-6 inline-block bg-slate-200 text-black font-extrabold font-montserrat py-3 px-6 rounded-full hover:bg-teal-100 transition-all duration-300">
+                    <a href="/services/get-quote" className="mt-6 inline-block bg-slate-200 text-black font-extrabold font-montserrat py-3 px-6 rounded-full hover:bg-teal-100 transition-all duration-300">
                         SCHEDULE A CONSULTATION
                     </a>
                 </div>

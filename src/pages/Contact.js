@@ -30,13 +30,11 @@ const Contact = () => {
           <h2 className='text-xl font-bold mb-4'>Contact Information</h2>
           <p className='mb-4'>We are here to assist you with any inquiries or issues you may have. Feel free to reach out!</p>
           <p className='font-bold'>Phone:</p>
-          <p className='mb-4'>+1 123-456-7890</p>
+          <p className='mb-4'>+1 412-956-7583</p>
           <p className='font-bold'>Email:</p>
-          <p className='mb-4'>email@example.com</p>
+          <p className='mb-4'>minascleaning05@gmail.com</p>
           <p className='font-bold'>Address:</p>
-          <p className='mb-4'>1234 Main St, Anytown, USA</p>
-          <p className='font-bold'>Business Hours:</p>
-          <p className='mb-4'>Mon-Fri: 9am - 5pm</p>
+          <p className='mb-4'>Pittsburgh, PA, United States, Pennsylvania</p>
         </div>
 
         <div className='bg-white rounded-lg shadow-lg p-6 w-full max-w-xl'>

@@ -67,8 +67,8 @@ const Carousel = () => {
                             <h2 className='text-sm md:text-lg font-medium'>MOVING CLEAN-UP</h2>
                             <h1 className='text-xl md:text-3xl font-bold mt-2 font-montserrat'>Moving Cleaning</h1>
                             <p className='text-sm md:text-base mt-4'>
-                                Ensure your project looks its best with our construction clean-up services.
-                                We remove all traces of debris, leaving a pristine and ready-to-use environment.
+                                Ensure you leave your space looking its best with our moving clean up services.
+                                We handle removal of debris and unwanted items leaving your place ready for move out.
                             </p>
                             <a 
                                 href="/services/get-quote"

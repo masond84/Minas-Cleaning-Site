@@ -265,7 +265,7 @@ const QuoteForm = () => {
                             {/* How Did You Hear About Us */}
                             <div className="flex flex-col">
                                 <label className="font-medium mb-1 font-montserrat" htmlFor="referral">
-                                    How did you hear about Luxe Cleaning Co.? <span className="text-red-500">*</span>
+                                    How did you hear about Minas Cleaning Services? <span className="text-red-500">*</span>
                                 </label>
                                 <input
                                     type="text"

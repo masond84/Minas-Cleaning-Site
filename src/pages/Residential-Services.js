@@ -62,7 +62,7 @@ const ResidentialServices = () => {
                         {/* Service Type Field */}
                         <div>
                         <label className='block mb-2'>Service Type</label>
-                        <select className='w-full p-2 border border-gray-300 rounded' >
+                        <select className='w-full p-2 border border-gray-300 rounded' defaultValue="residential">
                             <option value="">Select Service Type</option>
                             <option value="residential">Residential Cleaning</option>
                             <option value="commercial">Commercial Cleaning</option>
@@ -96,10 +96,8 @@ const ResidentialServices = () => {
                         <ul className="text-gray-700 space-y-2">
                             <li>Sanitize countertops, cabinets & backsplash</li>
                             <li>Wash exterior of appliances & interior microwave</li>
-                            <li>Wash any dirty dishes</li>
                             <li>Wipe down table legs, chairs, barstools</li>
                             <li>Wipe down cabinet exterior</li>
-                            <li>Wash under sink by garbage</li>
                         </ul>
                     </div>
                     
