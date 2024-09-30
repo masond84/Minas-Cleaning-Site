@@ -3,16 +3,25 @@ import { NavLink } from 'react-router-dom'
 /* Assets */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import logo from '../assets/Minas-Logo-sm.svg'
 /* Styles */
 import '../assets/styles/header.css'
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+    const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false)
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen)
+        // Close the services dropdown when closing mobile menu
+        if (isMobileMenuOpen) {
+            setIsServicesDropdownOpen(false)
+        }
+    }
+
+    const toggleServicesDropdown = () => {
+        setIsServicesDropdownOpen(!isServicesDropdownOpen)
     }
 
     return (
@@ -24,7 +33,7 @@ const Header = () => {
                         <img
                             src={logo}
                             alt='Minas Cleaning Services'
-                            className='h-36 -mt-2 -mb-2'
+                            className='h-20 md:h-36 -mt-2 -mb-2'
                         />
                     </NavLink>
                 </figure>
@@ -37,7 +46,104 @@ const Header = () => {
                     </a>
                 </nav>
             </div>
-            <nav className='bg-white border-t border-gray-300'>
+
+            {/* Hamburger Button Section */}
+            <div className='md:hidden border-t border-b border-gray-300 py-2 flex justify-center'>
+                <button className='text-3xl text-gray-500' onClick={toggleMobileMenu}>
+                    <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} style={{ fontSize: '1.5rem' }}/>
+                </button>
+            </div>
+
+            {/* Mobile Menu */}
+            {isMobileMenuOpen && (
+                <nav className='bg-white border-t border-gray-300 md:hidden'>
+                    <ul className='flex flex-col items-center text-gray-700 font-normal text-base py-2'>
+                        <li className='py-2'>
+                            <NavLink
+                                to="/"
+                                activeClassName="text-white bg-black px-4 py-2 rounded" 
+                                className="hover:text-black transition-colors duration-200 font-montserrat text-black text-base"
+                                onClick={toggleMobileMenu}
+                            >
+                                Home
+                            </NavLink>
+                        </li>
+                        <li className='py-2'>
+                            {/* Services Dropdown Toggle */}
+                            <div onClick={toggleServicesDropdown} className="flex items-center cursor-pointer hover:text-black transition-colors duration-200 font-montserrat text-black text-base w-full justify-center relative">
+                                Services
+                                <FontAwesomeIcon icon={faChevronDown} className="ml-2 text-sm" />
+                            </div>
+                            {isServicesDropdownOpen && (
+                                <ul className='flex flex-col items-center text-gray-700 font-normal text-base py-2'>
+                                    <li className='py-1'>
+                                        <NavLink
+                                            to="/services/residential"
+                                            activeClassName="text-white bg-black px-4 py-2 rounded"
+                                            className="hover:text-black transition-colors duration-200 font-montserrat text-black text-base"
+                                            onClick={toggleMobileMenu}
+                                        >
+                                            Residential Cleaning
+                                        </NavLink>
+                                    </li>
+                                    <li className='py-1'>
+                                        <NavLink
+                                            to="/services/business"
+                                            activeClassName="text-white bg-black px-4 py-2 rounded"
+                                            className="hover:text-black transition-colors duration-200 font-montserrat text-black text-base"
+                                            onClick={toggleMobileMenu}
+                                        >
+                                            Business Cleaning
+                                        </NavLink>
+                                    </li>
+                                    <li className='py-1'>
+                                        <NavLink
+                                            to="/services/moving"
+                                            activeClassName="text-white bg-black px-4 py-2 rounded"
+                                            className="hover:text-black transition-colors duration-200 font-montserrat text-black text-base"
+                                            onClick={toggleMobileMenu}
+                                        >
+                                            Moving Cleaning
+                                        </NavLink>
+                                    </li>
+                                    <li className='py-1'>
+                                        <NavLink
+                                            to="/services/other-services"
+                                            activeClassName="text-white bg-black px-4 py-2 rounded"
+                                            className="hover:text-black transition-colors duration-200 font-montserrat text-black text-base"
+                                            onClick={toggleMobileMenu}
+                                        >
+                                            Other Services
+                                        </NavLink>
+                                    </li>
+                                </ul>
+                            )}
+                        </li>
+                        <li className='py-2'>
+                            <NavLink
+                                to="/about"
+                                activeClassName="text-white bg-black px-4 py-2 rounded" 
+                                className="hover:text-black transition-colors duration-200 font-montserrat text-black text-base"
+                                onClick={toggleMobileMenu}
+                            >
+                                About
+                            </NavLink>
+                        </li>
+                        <li className='py-2'>
+                            <NavLink
+                                to="/contact"
+                                activeClassName="text-white bg-black px-4 py-2 rounded" 
+                                className="hover:text-black transition-colors duration-200 font-montserrat text-black text-base"
+                                onClick={toggleMobileMenu}
+                            >
+                                Contact
+                            </NavLink>
+                        </li>
+                    </ul>
+                </nav>
+            )}
+            {/* Full Desktop Menu */}
+            <nav className='hidden md:block bg-white border-t border-gray-300'>
                 <ul className='flex justify-center items-center text-gray-700 font-normal text-base py-2'>
                     <li className='relative nav-link'>
                         <NavLink 
