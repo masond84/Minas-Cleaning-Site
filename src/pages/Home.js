@@ -19,20 +19,22 @@ const Home = () => {
     return (
         <div className='overflow-x-hidden'>
             {/* HERO SECTION */}
-            <div className='relative h-screen w-full overflow-hidden shadow-lg'>
+            <div className='relative h-[70vh] md:h-screen w-full overflow-hidden shadow-lg'>
                 <video
                     autoPlay
                     loop
                     muted
-                    className='absolute top-0 left-0 w-full h-full object-cover'
+                    playsInline
+                    disablePictureInPicture
+                    className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none'
                 >
                     <source src={CleaningVideo} type='video/mp4' />
                     Your browser does not support the video tag
                 </video>
-                <div className='absolute inset-0 flex flex-col items-center justify-center'>
-                    <div className='glassmorphism  text-center p-10 md:p-16 rounded w-8/12 md:w-3/4 lg:w-1/2'>
+                <div className='absolute inset-0 flex flex-col items-center justify-center px-4 md:px-0'>
+                    <div className='glassmorphism text-center p-10 md:p-12 lg:p-16 rounded w-full md:w-3/4 lg:w-1/2'>
                         <h1 
-                            className="text-2xl md:text-4xl font-montserrat font-semibold mb-4"
+                            className="text-3xl sm:text-4xl md:text-5xl font-montserrat font-semibold mb-4 leading-tight"
                             style={{ color: 'var(--white)'}}
                         >
                         CLEAN SPACE, HAPPY SPACE    
@@ -44,7 +46,7 @@ const Home = () => {
                             We offer top-notch cleaning services that will leave your space sparkling clean and those in it smiling!
                         </p>
                         <button 
-                                className="text-white font-montserrat px-6 py-3 rounded transition duration-300 hover:bg-[#1A9F96] hover:shadow-lg"
+                                className="text-white font-montserrat px-5 py-2 sm:px-6 sm:py-3 rounded transition duration-300 hover:bg-[#1A9F96] hover:shadow-lg"
                                 style={{
                                 backgroundColor: 'var(--primary-color)',
                             }}

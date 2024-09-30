@@ -38,7 +38,6 @@ const GeneralQuoteForm = () => {
     return (
         <div 
             className="min-h-screen flex justify-center py-8"
-            style={{ backgroundColor: '#f9f9f9'}}
         >
             <div className="bg-white shadow-md rounded-lg w-full max-w-4xl p-8">
                 <h1 className="text-3xl font-medium mb-6 text-center font-montserrat">

@@ -106,7 +106,7 @@ const About = () => {
           className='bg-gray-100 rounded-lg shadow-lg mb-4'
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon className='text-blue-600'/>}
+            expandIcon={<ExpandMoreIcon style={{ color: '#22c3bd' }}/>}
             aria-controls='panel1a-content'
             id='panel1a-header'
           >
@@ -125,7 +125,7 @@ const About = () => {
           className='bg-gray-100 rounded-lg shadow-lg mb-4'
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon className='text-blue-600'/>}
+            expandIcon={<ExpandMoreIcon style={{ color: '#22c3bd' }}/>}
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
@@ -144,7 +144,7 @@ const About = () => {
           className='bg-gray-100 rounded-lg shadow-lg mb-4'
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon className='text-blue-600'/>}
+            expandIcon={<ExpandMoreIcon style={{ color: '#22c3bd' }}/>}
             aria-controls="panel3a-content"
             id="panel3a-header"
           >
@@ -163,7 +163,7 @@ const About = () => {
           className='bg-gray-100 rounded-lg shadow-lg mb-4'
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon className='text-blue-600'/>}
+            expandIcon={<ExpandMoreIcon style={{ color: '#22c3bd' }}/>}
             aria-controls="panel4a-content"
             id="panel4a-header"
           >
@@ -182,7 +182,7 @@ const About = () => {
           className='bg-gray-100 rounded-lg shadow-lg mb-4'
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon className='text-blue-600'/>}
+            expandIcon={<ExpandMoreIcon style={{ color: '#22c3bd' }}/>}
             aria-controls="panel5a-content"
             id="panel5a-header"
           >
