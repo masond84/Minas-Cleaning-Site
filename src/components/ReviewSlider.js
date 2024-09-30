@@ -54,17 +54,24 @@ const reviews = [
 const PrevArrow = (props) => {
     const { className, onClick, style } = props
     return (
-        <div className={className} onClick={onClick} style={{ ...style, display: 'block', left: -25, top:100, zIndex: 1 }}>
+        <div
+            className={`${className} hidden sm:block`}
+            onClick={onClick}
+            style={{ ...style, display: 'block', left: -25, top: 100, zIndex: 1 }}
+        >
             <ArrowBackIosIcon style={{ color: 'gray', fontSize: '30px' }} />
         </div>
     )
 }
 
-
 const NextArrow = (props) => {
     const { className, onClick, style } = props
     return (
-        <div className={className} onClick={onClick} style={{ ...style, display: 'block', right: -25, top:100, zIndex: 1 }}>
+        <div
+            className={`${className} hidden sm:block`}
+            onClick={onClick}
+            style={{ ...style, display: 'block', right: -25, top: 100, zIndex: 1 }}
+        >
             <ArrowForwardIosIcon style={{ color: 'gray', fontSize: '30px' }} />
         </div>
     )
@@ -81,6 +88,14 @@ const ReviewSlider = () => {
         autoplaySpeed: 3000,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
+        responsive: [
+            {
+                breakpoint: 640,
+                settings: {
+                    arrows: false, // Disable arrows for screens smaller than 640px
+                },
+            },
+        ],
     }
 
     
