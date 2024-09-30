@@ -85,7 +85,7 @@ const ReviewSlider = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 6000,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         responsive: [
@@ -108,15 +108,27 @@ const ReviewSlider = () => {
                 <Slider {...settings}>
                     {reviews.map((review, index) => (
                         <div key={index} className='flex justify-center'>
-                            <Card className='w-full flex flex-col md:flex-row p-4 shadow-lg my-5'>
-                                <div className='flex flex-col items-center md:items-start w-1/3 p-4'>
-                                    <Avatar src={review.image} alt={review.name} className='w-24 h-24 mb-4' />
+                            <Card className='w-full flex flex-col items-center md:flex-row p-2 md:p-4 lg:p-6 shadow-lg h-auto md:h-72 lg:h-80'>
+                                <div className='flex flex-col items-center md:items-start w-full md:w-1/3 p-2 md:p-4 text-center md:text-left'>
+                                    <Avatar src={review.image} alt={review.name} className='w-20 h-20 mb-4 md:w-24 md:h-24' />
                                     <Typography variant='h6'>{review.name}</Typography>
                                     <Typography variant='body2' className='text-gray-500'>{review.date}</Typography>
                                     <Rating value={review.rating} readOnly />
                                 </div>
-                                <CardContent className='w-2/3 p-4'>
-                                    <Typography variant='body1' className='text-left'>{review.text}</Typography>
+                                <CardContent className='w-full md:w-2/3 p-2 md:p-4 lg:p-6 flex flex-col justify-center'>
+                                    <Typography 
+                                        variant='body1' 
+                                        className='text-center md:text-left line-clamp-4 overflow-hidden'
+                                        style={{
+                                            display: '-webkit-box',
+                                            WebkitLineClamp: 4,
+                                            WebkitBoxOrient: 'vertical',
+                                            overflow: 'hidden',
+                                            textOverflow: 'ellipsis',
+                                        }}
+                                    >
+                                        {review.text}
+                                    </Typography>
                                 </CardContent>
                             </Card>
                         </div>
