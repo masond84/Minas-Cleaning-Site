@@ -59,19 +59,19 @@ const Home = () => {
             </div>
 
             {/* INTRODUCTION SECTION */}
-            <section className='py-12 px-4 md:px-8 lg:px-16 bg-white text-center'>
-                <p className='font-montserrat text-lg md:text-xl mb-6 mx-auto max-w-4xl'>
-                Minas Cleaning Services is dedicated to making your space spotless and welcoming. Covering all your cleaning needs, from homes to businesses and post-construction, our skilled team ensures every job is done right. Count on us for thorough, reliable service with a personal touch.
+            <section className='py-10 px-10 sm:px-12 md:px-18 bg-white text-center'>
+                <p className='font-montserrat text-base sm:text-lg md:text-xl mb-6 mx-auto max-w-4xl'>
+                Minas Cleaning Services is dedicated to making your space spotless and welcoming. Covering all your cleaning needs, from homes to businesses to moving. Our skilled team ensures every job is done right! Count on us for a thorough, and reliable service with a personal touch.
                 </p>
             </section>
 
             {/* Divider */}
-            <hr className='border-t-2 border-gray-300 my-2 mx-auto w-1/2' />
+            <hr className='border-t-2 border-gray-300 mt-1 mb-2 mx-auto w-1/2' />
 
             {/* FEATURES SECTION */}
             <section className='py-12 px-4 md:px-8 lg:px-16 bg-white'>
                 <h2 className='text-2xl md:text-3xl font-montserrat font-light text-center mb-8'>Why Choose Minas'</h2>
-                <div className='flex flex-col md:flex-row justify-center items-start space-y-8 md:space-y-0 md:space-x-16'>
+                <div className='flex flex-col md:flex-row justify-center items-start space-y-6 md:space-y-0 md:space-x-8'>
                     <motion.div
                         initial="hidden"
                         whileInView="visible"
@@ -79,17 +79,17 @@ const Home = () => {
                         variants={{ visible: { transition: { staggerChildren: 0.2 } } }}
                         className='flex flex-col items-start text-left'
                     >
-                        <ul className='space-y-4 font-montserrat text-lg md:text-xl list-none'>
+                        <ul className='space-y-3 sm:space-y-4 font-montserrat text-base sm:text-lg md:text-xl list-none'>
                             <motion.li variants={listItemVariants} className='flex items-center'>
-                                <FaCheckCircle className='text-primary-color mr-2' />
+                                <FaCheckCircle className='text-primary-color mr-2 w-5 h-5' size={20}/>
                                 <span className="pl-3 border-l-2 border-primary-color">Trained & Certified Bilingual Staff</span>
                             </motion.li>
                             <motion.li variants={listItemVariants} className='flex items-center'>
-                                <FaCheckCircle className='text-primary-color mr-2' />
+                                <FaCheckCircle className='text-primary-color mr-2 w-5 h-5' size={20}/>
                                 <span className="pl-3 border-l-2 border-primary-color">Eco-Friendly And Pet Friendly Cleaning Products</span>
                             </motion.li>
                             <motion.li variants={listItemVariants} className='flex items-center'>
-                                <FaCheckCircle className='text-primary-color mr-2' />
+                                <FaCheckCircle className='text-primary-color mr-2 w-5 h-5' size={20}/>
                                 <span className="pl-3 border-l-2 border-primary-color">Reliable And Family Friendly Services</span>
                             </motion.li>
                         </ul>
@@ -101,17 +101,17 @@ const Home = () => {
                         variants={{ visible: { transition: { staggerChildren: 0.2 } } }}
                         className='flex flex-col items-start text-left'
                     >
-                        <ul className='space-y-4 font-montserrat text-lg md:text-xl list-none'>
+                        <ul className='space-y-3 font-montserrat text-base sm:text-lg md:text-xl list-none'>
                             <motion.li variants={listItemVariants} className='flex items-center'>
-                                <FaCheckCircle className='text-primary-color mr-2' />
+                                <FaCheckCircle className='text-primary-color mr-2 w-5 h-5' size={20}/>
                                 <span className="pl-3 border-l-2 border-primary-color">Customer Focused Communication</span>
                             </motion.li>
                             <motion.li variants={listItemVariants} className='flex items-center'>
-                                <FaCheckCircle className='text-primary-color mr-2' />
+                                <FaCheckCircle className='text-primary-color mr-2 w-5 h-5' size={20}/>
                                 <span className="pl-3 border-l-2 border-primary-color">Daily, Weekly, Biweekly & Monthly Options</span>
                             </motion.li>
                             <motion.li variants={listItemVariants} className='flex items-center'>
-                                <FaCheckCircle className='text-primary-color mr-2' />
+                                <FaCheckCircle className='text-primary-color mr-2 w-5 h-5' size={20}/>
                                 <span className="pl-3 border-l-2 border-primary-color">Tailored Cleaning, Transparent Pricing</span>
                             </motion.li>
                         </ul>
@@ -123,17 +123,17 @@ const Home = () => {
                         variants={{ visible: { transition: { staggerChildren: 0.2 } } }}
                         className='flex flex-col items-start text-left'
                     >
-                        <ul className='space-y-4 font-montserrat text-lg md:text-xl list-none'>
+                        <ul className='space-y-3 font-montserrat text-base sm:text-lg md:text-xl list-none'>
                             <motion.li variants={listItemVariants} className='flex items-center'>
-                                <FaCheckCircle className='text-primary-color mr-2' />
+                                <FaCheckCircle className='text-primary-color mr-2 w-5 h-5' size={20}/>
                                 <span className="pl-3 border-l-2 border-primary-color">Locally Owned And Operated</span>
                             </motion.li>
                             <motion.li variants={listItemVariants} className='flex items-center'>
-                                <FaCheckCircle className='text-primary-color mr-2' />
+                                <FaCheckCircle className='text-primary-color mr-2 w-5 h-5' size={20}/>
                                 <span className="pl-3 border-l-2 border-primary-color">Serving Over 60 Clients In The Pittsburgh Area</span>
                             </motion.li>
                             <motion.li variants={listItemVariants} className='flex items-center'>
-                                <FaCheckCircle className='text-primary-color mr-2' />
+                                <FaCheckCircle className='text-primary-color mr-2 w-5 h-5' size={20}/>
                                 <span className="pl-3 border-l-2 border-primary-color">Submit A Quote, And Get A Free Estimate Today!</span>
                             </motion.li>
                         </ul>
