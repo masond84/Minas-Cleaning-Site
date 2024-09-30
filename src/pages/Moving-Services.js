@@ -13,13 +13,13 @@ const MovingServices = () => {
         <div className="-mb-12">
             {/* Hero Section */}
             <div
-                className="relative w-full h-96 bg-cover bg-center flx items-center justify-center"
+                className="relative w-full h-96 bg-cover bg-center"
                 style={{ backgroundImage: `url(${MovingBackground})`}}
             >
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className="relative text-center z-10">
-                    <h1 className="text-4xl md:text-5xl font-bold font-montserrat text-white pt-8">Moving & Move-In Cleaning Services</h1>
-                    <p className="text-xl md:text-2xl mt-8 text-white">Thorough Cleaning For A Quick In And Out Into Your New Spaces</p>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-montserrat text-white pt-8">Move-In-Out Cleaning</h1>
+                    <p className="text-lg sm:text-xl md:text-2xl mt-4 sm:mt-8 text-white">Thorough Cleaning For A Quick In And Out Into Your New Spaces</p>
                 </div>
             </div>
 

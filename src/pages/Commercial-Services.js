@@ -13,13 +13,13 @@ const CommercialServices = () => {
         <div className="-mb-12">
             {/* Hero Section */}
             <div
-                className="relative w-full h-96 bg-cover bg-center flx items-center justify-center"
+                className="relative w-full h-96 bg-cover bg-center"
                 style={{ backgroundImage: `url(${OfficeBackground})`}}
             >
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className="relative text-center z-10">
-                    <h1 className="text-4xl md:text-5xl font-bold font-montserrat text-white pt-8">Commercial Cleaning Services</h1>
-                    <p className="text-xl md:text-2xl mt-8 text-white">Professional Cleaning for Office & Commercial Spaces</p>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-montserrat text-white pt-8">Commercial Cleaning</h1>
+                    <p className="text-lg sm:text-xl md:text-2xl mt-4 sm:mt-8 text-white">Professional Cleaning for Office & Commercial Spaces</p>
                 </div>
             </div>
 
@@ -92,7 +92,7 @@ const CommercialServices = () => {
 
                     {/* Plus Extras */}
                     <div>
-                        <h3 className="text-xl font-bold mb-4 -mt-10 font-montserrat">Plus Extras</h3>
+                        <h3 className="text-xl font-bold mb-4 font-montserrat">Plus Extras</h3>
                         <ul className="text-gray-700 space-y-2">
                             <li>Deep cleaning of high traffic areas</li>
                             <li>Floor Buffing and Cleaning</li>
