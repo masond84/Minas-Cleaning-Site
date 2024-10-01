@@ -97,22 +97,22 @@ const ResidentialServices = () => {
                 </div>
             </section>
 
-            <section className="flex flex-col items-center py-16 bg-[#FCFCFC] shadow-xl shadow-blue-300 border-t-1 border-blue-900">
+            <section className="flex flex-col items-center py-8 bg-[#FCFCFC] shadow-xl shadow-blue-300 border-t-1 border-blue-900">
                 {/* Hero Banner */}
-                <div className="relative w-full max-w-6xl bg-[#22C3BD] text-white rounded-lg p-8 mb-12 text-center">
-                    <h1 className="text-3xl md:text-4xl font-bold font-montserrat">EXPERIENCE YOUR CLEANEST HOME YET</h1>
-                    <a href="#book" className="mt-6 inline-block bg-slate-200 text-black font-extrabold font-montserrat py-3 px-6 rounded-full hover:bg-teal-100 transition-all duration-300">
+                <div className="relative w-full max-w-sm md:max-w-5xl bg-gradient-to-b from-[#22C3BD] to-[#1a96ac] text-white rounded-lg p-8 mb-12 text-center">
+                    <h1 className="text-2xl sm:text-xl md:text-3xl font-bold font-montserrat">EXPERIENCE YOUR CLEANEST HOME YET</h1>
+                    <a href="/services/get-quote" className="mt-8 inline-block bg-slate-200 text-black font-extrabold font-montserrat py-3 px-6 rounded-full hover:bg-teal-100 transition-all duration-300">
                         BOOK ONLINE
                     </a>
                 </div>
 
                 {/* Information Section */}
-                <div className="max-w-4xl text-center">
-                    <h2 className="text-2xl md:text-3xl font-montserrat font-light text-center mb-8">Housekeeping, Maid, and Recurring Cleaning Services In Pittsburgh</h2>
-                    <p className="font-montserrat text-md md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
+                <div className="max-w-xs md:max-w-4xl text-center">
+                    <h2 className="text-2xl sm:text-xl md:text-3xl font-montserrat font-light text-center mb-4">Housekeeping, Maid, and Recurring Cleaning Services In Pittsburgh</h2>
+                    <p className="font-montserrat text-md sm:text-sm md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
                         Mina's Cleaning Services LLC specializes in maintaining the highest standards of cleanliness for homes across the Pittsburgh area. Serving over 60 satisfied clients, our residential cleaning services are designed to leave your home spotless and welcoming. From routine housekeeping to deep cleaning, our team takes care of every detail, ensuring your living spaces are pristine and comfortable.
                     </p>
-                    <p className="font-montserrat text-md md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
+                    <p className="font-montserrat text-md sm:text-sm md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
                         Our services include dusting, vacuuming, sanitizing, and more, all tailored to meet the unique needs of your home. With our recurring cleaning options, you can enjoy a consistently clean and healthy environment, allowing you to focus on what matters most. Trust Mina's Cleaning Services to bring unparalleled expertise and dedication to every room in your house.
                     </p>
                 </div>
@@ -120,10 +120,10 @@ const ResidentialServices = () => {
 
             <section className="py-8 bg-white text-center">
                 {/* Main Header */}
-                <h2 className="text-2xl md:text-3xl font-montserrat font-light text-center mb-8">Our Services</h2>
+                <h2 className="text-2xl sm:text-xl md:text-3xl font-montserrat font-light text-center mb-8">Our Services</h2>
 
                 {/* Service Cards */}
-                <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="max-w-xs md:max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-4 sm:px-4">
                     {/* House Cleaning */}
                     <div className="relative bg-white shadow-lg rounded-lg overflow-hidden">
                         <img 

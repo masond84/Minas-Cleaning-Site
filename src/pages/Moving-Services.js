@@ -34,7 +34,7 @@ const MovingServices = () => {
 
             <section className="py-16 text-center">
                 {/* Section Header */}
-                <h2 className="text-3xl font-light mb-4 font-montserrat">Move-In/Move-Out Cleaning Services</h2>
+                <h2 className="text-3xl font-light mb-4 mx-4 font-montserrat">Move-In/Move-Out Cleaning Services</h2>
                 <p className="text-lg text-gray-600 mb-12">Make Your Move Hassle-Free with Our Various Cleaning Solutions</p>
             
                 {/* Services Areas */}
@@ -93,24 +93,24 @@ const MovingServices = () => {
                 </div>
             </section>
 
-            <section className="flex flex-col items-center py-16 bg-[#FCFCFC] shadow-xl shadow-blue-300 border-t-1 border-blue-900">
+            <section className="flex flex-col items-center py-8 bg-[#FCFCFC] shadow-xl shadow-blue-300 border-t-1 border-blue-900">
                 {/* Hero Banner */}
-                <div className="relative w-full max-w-6xl bg-[#22C3BD] text-white rounded-lg p-8 mb-12 text-center">
-                    <h1 className="text-3xl md:text-4xl font-bold font-montserrat">A CLEAN SPACE TO START YOUR NEW BEGINNING</h1>
-                    <a href="#book" className="mt-6 inline-block bg-slate-200 text-black font-extrabold font-montserrat py-3 px-6 rounded-full hover:bg-teal-100 transition-all duration-300">
-                        SCHEDULE A CONSULTATION
+                <div className="relative w-full max-w-sm md:max-w-5xl bg-gradient-to-b from-[#22C3BD] to-[#1a96ac] text-white rounded-lg p-8 mb-12 text-center">
+                    <h1 className="text-2xl sm:text-xl md:text-3xl font-bold font-montserrat">A CLEAN SPACE TO START YOUR NEW BEGINNING</h1>
+                    <a href="/services/get-quote" className="mt-8 inline-block bg-slate-200 text-black font-extrabold font-montserrat py-3 px-6 rounded-full hover:bg-teal-100 transition-all duration-300">
+                        BOOK ONLINE
                     </a>
                 </div>
 
                 {/* Information Section */}
-                <div className="max-w-4xl text-center">
-                    <h2 className="text-2xl md:text-3xl font-montserrat font-light text-center mb-8">
+                <div className="max-w-xs md:max-w-4xl text-center">
+                    <h2 className="text-2xl sm:text-xl md:text-3xl font-montserrat font-light text-center mb-4">
                         Comprehensive Cleaning Services for Every Step of Your Project
                     </h2>
-                    <p className="font-montserrat text-md md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
+                    <p className="font-montserrat text-md sm:text-sm md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
                         Mina's Cleaning Services LLC offers thorough moving cleaning to ensure every inch of your newly built or renovated space is immaculate. We tackle the toughest cleaning challenges, leaving your space pristine and ready for occupancy.
                     </p>
-                    <p className="font-montserrat text-md md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
+                    <p className="font-montserrat text-md sm:text-sm md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
                         Whether you're finishing a small home renovation or completing a large commercial project, our experienced team delivers a spotless, move-in-ready environment, so you can focus on enjoying your new space without the stress of cleanup.
                     </p>
                 </div>
@@ -118,10 +118,10 @@ const MovingServices = () => {
 
             <section className="py-8 bg-white text-center">
                 {/* Main Header */}
-                <h2 className="text-2xl md:text-3xl font-montserrat font-light text-center mb-8">Our Services</h2>
+                <h2 className="text-2xl sm:text-xl md:text-3xl font-montserrat font-light text-center mb-8">Our Services</h2>
 
                 {/* Service Cards */}
-                <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="max-w-xs md:max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-4 sm:px-4">
                     {/* House Cleaning */}
                     <div className="relative bg-white shadow-lg rounded-lg overflow-hidden">
                         <img 
