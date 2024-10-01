@@ -194,19 +194,19 @@ const GeneralQuoteForm = () => {
                                     What type of cleaning service? <span className="text-red-500">*</span>
                                 </label>
                                 <div className="flex flex-wrap gap-x-4 gap-y-2">
-                                    <label className="flex items-center w-1/3 mr-2 sm:w-auto">
+                                    <label className="flex items-center w-1/3 mr-4 sm:mr-0 sm:w-auto">
                                         <input type="checkbox" name="cleaningService" className="mr-2" value="home" />
                                         Home
                                     </label>
-                                    <label className="flex items-center w-1/3 mr-2 sm:w-auto">
+                                    <label className="flex items-center w-1/3 mr-4 sm:mr-0 sm:w-auto">
                                         <input type="checkbox" name="cleaningService" className="mr-2" value="business" />
                                         Business
                                     </label>
-                                    <label className="flex items-center w-1/3 mr-2 sm:w-auto">
+                                    <label className="flex items-center w-1/3 mr-4 sm:mr-0 sm:w-auto">
                                         <input type="checkbox" name="cleaningService" className="mr-2" value="business" />
                                         Construction
                                     </label>
-                                    <label className="flex items-center w-1/3 mr-2 sm:w-auto">
+                                    <label className="flex items-center w-1/3 mr-4 sm:mr-0 sm:w-auto">
                                         <input type="checkbox" name="cleaningService" className="mr-2" value="business" />
                                         Extra
                                     </label>
@@ -304,8 +304,9 @@ const GeneralQuoteForm = () => {
 
                             {/* How Did You Hear About Us */}
                             <div className="flex flex-col">
-                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="referral">
-                                    How did you hear about Minas Cleaning Services? <span className="text-red-500">*</span>
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat flex items-center" htmlFor="referral">
+                                    <span>How did you hear about Minas Cleaning Services?</span>
+                                    <span className="text-red-500 ml-1">*</span>
                                 </label>
                                 <input
                                     type="text"
