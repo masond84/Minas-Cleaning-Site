@@ -39,22 +39,22 @@ const GeneralQuoteForm = () => {
         <div 
             className="min-h-screen flex justify-center py-8"
         >
-            <div className="bg-white shadow-md rounded-lg w-full max-w-4xl p-8">
-                <h1 className="text-3xl font-medium mb-6 text-center font-montserrat">
+            <div className="bg-white shadow-md rounded-lg w-full max-w-xs sm:max-w-4xl p-4 sm:p-8">
+                <h1 className="text-2xl sm:text-3xl font-medium mb-6 text-center font-montserrat">
                     Get a Cleaning Quote
                 </h1>
 
                 <form ref={form} onSubmit={sendEmail}>
                     {/* Contact Information Section */}
                     <div className="mb-6">
-                        <h2 className="text-xl font-medium font-montserrat mb-4">
-                            Your Contact Information
+                        <h2 className="text-lg sm:text-xl font-medium font-montserrat mb-4">
+                            Contact Information
                         </h2>
                         <hr className="border-gray-300 mb-4 w-3/4" />
                         <div className="grid grid-colrs-1 md:grid-cols-2 gap-4">
                             {/* Name */}
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat" htmlFor="firstName">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="firstName">
                                     First Name <span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -67,7 +67,7 @@ const GeneralQuoteForm = () => {
                                 />
                             </div>
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat" htmlFor="lastName">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="lastName">
                                     Last Name <span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -82,7 +82,7 @@ const GeneralQuoteForm = () => {
 
                             {/* Phone */}
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat" htmlFor="phone">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="phone">
                                     Phone <span className="text-red-500">*</span>
                                 </label>
                                 <input 
@@ -99,7 +99,7 @@ const GeneralQuoteForm = () => {
 
                             {/* Email */}
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat" htmlFor="email">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="email">
                                     Email <span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -116,13 +116,13 @@ const GeneralQuoteForm = () => {
 
                     {/* Physical Address Section */}
                     <div className="mb-6">
-                        <h2 className="text-xl font-medium font-montserrat mb-4">
+                        <h2 className="text-lg sm:text-xl font-medium font-montserrat mb-4">
                             Physical Address
                         </h2>
                         <hr className="border-gray-300 mb-4 w-3/4" />
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat" htmlFor="streetAddress">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="streetAddress">
                                     Street Address <span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -136,7 +136,7 @@ const GeneralQuoteForm = () => {
                             </div>
 
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat" htmlFor="city">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="city">
                                     City <span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -150,7 +150,7 @@ const GeneralQuoteForm = () => {
                             </div>
 
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat" htmlFor="apt-suite">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="apt-suite">
                                     Apt/Suite <span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -164,7 +164,7 @@ const GeneralQuoteForm = () => {
                             </div>
 
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat" htmlFor="province">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="province">
                                     Zip Code <span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -183,30 +183,30 @@ const GeneralQuoteForm = () => {
 
                     {/* Quote Information Section */}
                     <div className="mb-6">
-                        <h2 className="text-xl font-medium font-montserrat mb-4">
+                        <h2 className="text-lg sm:text-xl font-medium font-montserrat mb-4">
                             Quote Information
                         </h2>
                         <hr className="border-gray-300 mb-4 w-3/4" />
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                              {/* Type of Cleaning Service */}
                              <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat">
                                     What type of cleaning service? <span className="text-red-500">*</span>
                                 </label>
-                                <div className="flex gap-4">
-                                    <label className="flex items-center">
+                                <div className="flex flex-wrap gap-x-4 gap-y-2">
+                                    <label className="flex items-center w-1/3 mr-2 sm:w-auto">
                                         <input type="checkbox" name="cleaningService" className="mr-2" value="home" />
                                         Home
                                     </label>
-                                    <label className="flex items-center">
+                                    <label className="flex items-center w-1/3 mr-2 sm:w-auto">
                                         <input type="checkbox" name="cleaningService" className="mr-2" value="business" />
                                         Business
                                     </label>
-                                    <label className="flex items-center">
+                                    <label className="flex items-center w-1/3 mr-2 sm:w-auto">
                                         <input type="checkbox" name="cleaningService" className="mr-2" value="business" />
                                         Construction
                                     </label>
-                                    <label className="flex items-center">
+                                    <label className="flex items-center w-1/3 mr-2 sm:w-auto">
                                         <input type="checkbox" name="cleaningService" className="mr-2" value="business" />
                                         Extra
                                     </label>
@@ -215,7 +215,7 @@ const GeneralQuoteForm = () => {
 
                             {/* Square Footage */}
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat" htmlFor="squareFeet">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="squareFeet">
                                     How many square feet of space to be cleaned? <span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -233,7 +233,7 @@ const GeneralQuoteForm = () => {
 
                             {/* Frequency of Cleaning */}
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat" htmlFor="frequency">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="frequency">
                                     Frequency of Cleaning <span className="text-red-500">*</span>
                                 </label>
                                 <select
@@ -250,7 +250,7 @@ const GeneralQuoteForm = () => {
 
                             {/* Preferred Method of Entry */}
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat" htmlFor="methodOfEntry">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="methodOfEntry">
                                     Preferred Method of Entry <span className="text-red-500">*</span>
                                 </label>
                                 <select
@@ -267,7 +267,7 @@ const GeneralQuoteForm = () => {
 
                             {/* Preferred Cleaning Day */}
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat" htmlFor="cleaningDay">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="cleaningDay">
                                     If available, which day works best for you?
                                 </label>
                                 <input
@@ -280,7 +280,7 @@ const GeneralQuoteForm = () => {
 
                             {/* Preferred Arrival Time */}
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat">
                                     What is the preferred arrival time?
                                 </label>
                                 <div className="flex gap-4">
@@ -304,7 +304,7 @@ const GeneralQuoteForm = () => {
 
                             {/* How Did You Hear About Us */}
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat" htmlFor="referral">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="referral">
                                     How did you hear about Minas Cleaning Services? <span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -319,7 +319,7 @@ const GeneralQuoteForm = () => {
 
                             {/* Additional Questions */}
                             <div className="flex flex-col">
-                                <label className="font-medium mb-1 font-montserrat" htmlFor="questions">
+                                <label className="text-xs sm:text-base font-medium mb-1 font-montserrat" htmlFor="questions">
                                     Any Questions?
                                 </label>
                                 <input

@@ -112,3 +112,10 @@ code {
 .font-hind {
   font-family: 'Hind', sans-serif;
 }
+
+input:focus,
+textarea:focus {
+    border: 2px solid #5dd3ce; /* Matches the color in your screenshot */
+    outline: none; /* Removes the default outline */
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
