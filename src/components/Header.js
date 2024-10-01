@@ -11,17 +11,29 @@ import '../assets/styles/header.css'
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
     const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false)
+    const [isContactDropdownOpen, setIsContactDropdownOpen] = useState(false);
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen)
         // Close the services dropdown when closing mobile menu
         if (isMobileMenuOpen) {
             setIsServicesDropdownOpen(false)
+            setIsContactDropdownOpen(false)
         }
     }
 
     const toggleServicesDropdown = () => {
         setIsServicesDropdownOpen(!isServicesDropdownOpen)
+        if (isContactDropdownOpen) {
+            setIsContactDropdownOpen(false)
+        }
+    }
+
+    const toggleContactDropdown = () => {
+        setIsContactDropdownOpen(!isContactDropdownOpen);
+        if (isServicesDropdownOpen) {
+            setIsServicesDropdownOpen(false)
+        }
     }
 
     return (
@@ -130,14 +142,35 @@ const Header = () => {
                             </NavLink>
                         </li>
                         <li className='py-2'>
-                            <NavLink
-                                to="/contact"
-                                activeClassName="text-white bg-black px-4 py-2 rounded" 
-                                className="hover:text-black transition-colors duration-200 font-montserrat text-black text-base"
-                                onClick={toggleMobileMenu}
-                            >
+                            {/* Contact Dropdown Toggle */}
+                            <div onClick={toggleContactDropdown} className="flex items-center cursor-pointer hover:text-black transition-colors duration-200 font-montserrat text-black text-base w-full justify-center relative">
                                 Contact
-                            </NavLink>
+                                <FontAwesomeIcon icon={faChevronDown} className="ml-2 text-sm" />
+                            </div>
+                            {isContactDropdownOpen && (
+                                <ul className='flex flex-col items-center text-gray-700 font-normal text-base py-2'>
+                                    <li className='py-1'>
+                                        <NavLink
+                                            to="/contact"
+                                            activeClassName="text-white bg-black px-4 py-2 rounded"
+                                            className="hover:text-black transition-colors duration-200 font-montserrat text-black text-base"
+                                            onClick={toggleMobileMenu}
+                                        >
+                                            Contact Information
+                                        </NavLink>
+                                    </li>
+                                    <li className='py-1'>
+                                        <NavLink
+                                            to="/services/get-quote"
+                                            activeClassName="text-white bg-black px-4 py-2 rounded"
+                                            className="hover:text-black transition-colors duration-200 font-montserrat text-black text-base"
+                                            onClick={toggleMobileMenu}
+                                        >
+                                            Get A Quote
+                                        </NavLink>
+                                    </li>
+                                </ul>
+                            )}
                         </li>
                     </ul>
                 </nav>

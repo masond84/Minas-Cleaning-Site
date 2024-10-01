@@ -50,23 +50,27 @@ const Contact = () => {
           <h1 className="text-4xl md:text-5xl font-bold font-montserrat text-white pt-8">Contact Us</h1>
       </div>
     </div>
-
       {/*Contact Form Section */}
-      <div className='font-montserrat relative flex justify-center -mt-64 space-x-8 px-4 md:px-8'>
+      <div className='font-montserrat relative flex flex-col md:flex-row justify-center -mt-64 md:space-y-0 md:space-x-8 px-4 md:px-8'>
         {/* Contact Information Section */}
-        <div className='bg-white rounded-lg shadow-lg p-6 w-full max-w-sm'>
+        <div className='bg-white rounded-lg shadow-lg p-6 w-full max-w-sm md:w-auto'>
           <h2 className='text-xl font-bold mb-4'>Contact Information</h2>
+          <hr className="border-gray-300 mb-4 w-3/4" />
           <p className='mb-4'>We are here to assist you with any inquiries or issues you may have. Feel free to reach out!</p>
           <p className='font-bold'>Phone:</p>
           <p className='mb-4'>+1 412-956-7583</p>
+          <hr className="border-gray-300 mb-4 w-3/4" />
           <p className='font-bold'>Email:</p>
           <p className='mb-4'>minascleaning05@gmail.com</p>
+          <hr className="border-gray-300 mb-4 w-3/4" />
           <p className='font-bold'>Address:</p>
           <p className='mb-4'>Pittsburgh, PA, United States, Pennsylvania</p>
         </div>
 
-        <div className='bg-white rounded-lg shadow-lg p-6 w-full max-w-xl'>
+        <div className='bg-white rounded-lg shadow-lg p-6 w-full max-w-xl md:w-auto mt-8 md:mt-0'>
           <h1 className='text-2xl font-bold mb-5'>LET'S KEEP IN TOUCH</h1>
+          <hr className="border-gray-300 mb-4 w-3/4" />
+
           <form onSubmit={handleSubmit(onSubmit)} className='space-y-4'>
             {/* First and Last Name Row */}
             <div className='flex space-x-4'>
