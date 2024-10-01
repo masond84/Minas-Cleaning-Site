@@ -102,7 +102,7 @@ const ResidentialServices = () => {
                 <div className="relative w-full max-w-sm md:max-w-5xl bg-gradient-to-b from-[#22C3BD] to-[#1a96ac] text-white rounded-lg p-8 mb-12 text-center">
                     <h1 className="text-2xl sm:text-xl md:text-3xl font-bold font-montserrat">EXPERIENCE YOUR CLEANEST HOME YET</h1>
                     <a href="/services/get-quote" className="mt-8 inline-block bg-slate-200 text-black font-extrabold font-montserrat py-3 px-6 rounded-full hover:bg-teal-100 transition-all duration-300">
-                        BOOK ONLINE
+                        BOOK NOW
                     </a>
                 </div>
 

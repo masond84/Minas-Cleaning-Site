@@ -82,22 +82,22 @@ const OtherServices = () => {
                 </div>
             </section>
 
-            <section className="flex flex-col items-center py-16 bg-[#FCFCFC] shadow-xl shadow-blue-300 border-t-1 border-blue-900">
+            <section className="flex flex-col items-center py-8 bg-[#FCFCFC] shadow-xl shadow-blue-300 border-t-1 border-blue-900">
                 {/* Hero Banner */}
-                <div className="relative w-full max-w-6xl bg-[#22C3BD] text-white rounded-lg p-8 mb-12 text-center">
-                    <h1 className="text-3xl md:text-4xl font-bold font-montserrat">BOOST PRODUCTIVITY WITH A CLEAN WORKSPACE</h1>
-                    <a href="/services/get-quote" className="mt-6 inline-block bg-slate-200 text-black font-extrabold font-montserrat py-3 px-6 rounded-full hover:bg-teal-100 transition-all duration-300">
-                        SCHEDULE A CONSULTATION
+                <div className="relative w-full max-w-sm md:max-w-5xl bg-gradient-to-b from-[#22C3BD] to-[#1a96ac] text-white rounded-lg p-8 mb-12 text-center">
+                    <h1 className="text-2xl sm:text-xl md:text-3xl font-bold font-montserrat">BOOST PRODUCTIVITY WITH A CLEAN WORKSPACE</h1>
+                    <a href="/services/get-quote" className="mt-8 inline-block bg-slate-200 text-black font-extrabold font-montserrat py-3 px-6 rounded-full hover:bg-teal-100 transition-all duration-300">
+                        BOOK NOW
                     </a>
                 </div>
 
                 {/* Information Section */}
-                <div className="max-w-4xl text-center">
-                    <h2 className="text-2xl md:text-3xl font-montserrat font-light text-center mb-8">Boost Productivity with a Clean Workspace</h2>
-                    <p className="font-montserrat text-md md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
+                <div className="max-w-xs md:max-w-4xl text-center">
+                    <h2 className="text-2xl sm:text-xl md:text-3xl font-montserrat font-light text-center mb-4">Boost Productivity with a Clean Workspace</h2>
+                    <p className="font-montserrat text-md sm:text-sm md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
                         A clean environment is crucial for productivity and well-being. Let Mina's Cleaning Services take care of the dirty work so you can focus on what matters most.
                     </p>
-                    <p className="font-montserrat text-md md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
+                    <p className="font-montserrat text-md sm:text-sm md:text-lg mb-6 mx-auto max-w-4xl leading-relaxed">
                         Let us help you create a clean and comfortable environment with our professional office cleaning, janitorial services, and recurring facility maintenance. We proudly serve the Pittsburgh area, ensuring your space meets the highest standards of cleanliness.
                     </p>
                 </div>
@@ -105,10 +105,10 @@ const OtherServices = () => {
 
             <section className="py-8 bg-white text-center">
                 {/* Main Header */}
-                <h2 className="text-2xl md:text-3xl font-montserrat font-light text-center mb-8">Our Services</h2>
+                <h2 className="text-2xl sm:text-xl md:text-3xl font-montserrat font-light text-center mb-8">Our Services</h2>
 
                 {/* Service Cards */}
-                <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="max-w-xs md:max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-4 sm:px-4">
                     {/* House Cleaning */}
                     <div className="relative bg-white shadow-lg rounded-lg overflow-hidden">
                         <img 
