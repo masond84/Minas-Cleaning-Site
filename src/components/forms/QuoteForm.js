@@ -50,7 +50,7 @@ const QuoteForm = ({ defaultServiceType }) => {
             
             {/* Last Name Field */}
             <div className='flex-1'>
-            <label className='block mb-2'>Last Name</label>
+            <label className='font-montserrat block mb-2'>Last Name</label>
             <input 
                 name="lastName" 
                 className='w-full p-2 border border-gray-300 rounded' 
@@ -60,7 +60,7 @@ const QuoteForm = ({ defaultServiceType }) => {
           
             {/* Email Field */}
             <div>
-            <label className='block mb-2'>Email</label>
+            <label className='font-montserrat block mb-2'>Email</label>
             <input 
                 type='email' 
                 name="email" 
@@ -71,7 +71,7 @@ const QuoteForm = ({ defaultServiceType }) => {
             
             {/* Phone Field */}
             <div>
-            <label className='block mb-2'>Phone</label>
+            <label className='font-montserrat block mb-2'>Phone</label>
             <input 
                 type="tel" 
                 name="phone" 
@@ -84,16 +84,16 @@ const QuoteForm = ({ defaultServiceType }) => {
           
             {/* Service Type Field */}
             <div>
-            <label className='block mb-2'>Service Type</label>
+            <label className='font-montserrat block mb-2'>Service Type</label>
             <select 
                 name="cleaningService" 
-                className='w-full p-2 border border-gray-300 rounded' 
+                className='font-montserrat w-full p-2 border border-gray-300 rounded' 
                 defaultValue={defaultServiceType}
                 required
             >
-                <option value="residential">Residential Cleaning</option>
-                <option value="commercial">Commercial Cleaning</option>
-                <option value="moving">Moving Cleaning</option>
+                <option value="residential" className='font-montserrat'>Residential Cleaning</option>
+                <option value="commercial" className='font-montserrat'>Commercial Cleaning</option>
+                <option value="moving" className='font-montserrat'>Moving Cleaning</option>
             </select>
             </div>
           
@@ -102,14 +102,14 @@ const QuoteForm = ({ defaultServiceType }) => {
             <label className='block mb-2'>Message</label>
             <textarea 
                 name="message" 
-                className='w-full p-2 border border-gray-300 rounded' 
+                className='font-montserrat w-full p-2 border border-gray-300 rounded' 
                 required
             ></textarea>
             </div>
           
             <button 
                 type="submit" 
-                className="w-full py-2 px-3 text-white rounded text-sm" 
+                className="w-full py-2 px-3 text-white rounded text-lg font-montserrat" 
                 style={{ backgroundColor: '#22C3BD' }}
             >
                 Get Quote
